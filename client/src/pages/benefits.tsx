@@ -156,24 +156,24 @@ export default function Benefits() {
           </div>
 
           {/* Custom Solution Benefits */}
-          <div className="bg-gradient-to-r from-primary to-secondary p-12 rounded-2xl text-primary-foreground mb-16">
+          <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 p-12 rounded-2xl text-white mb-16">
             <div className="text-center">
               <h2 className="text-3xl font-bold mb-6">Custom Solutions for Maximum Impact</h2>
-              <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
+              <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
                 Every automation solution is built specifically for your company's needs, ensuring optimal results and maximum return on investment.
               </p>
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-4xl font-bold mb-2">Custom</div>
-                  <p className="text-primary-foreground/90">Calculation Logic</p>
+                  <div className="text-4xl font-bold mb-2 text-accent">Custom</div>
+                  <p className="text-gray-300">Calculation Logic</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">Tailored</div>
-                  <p className="text-primary-foreground/90">Drawing Standards</p>
+                  <div className="text-4xl font-bold mb-2 text-accent">Tailored</div>
+                  <p className="text-gray-300">Drawing Standards</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">Complete</div>
-                  <p className="text-primary-foreground/90">Software Ownership</p>
+                  <div className="text-4xl font-bold mb-2 text-accent">Complete</div>
+                  <p className="text-gray-300">Software Ownership</p>
                 </div>
               </div>
             </div>
