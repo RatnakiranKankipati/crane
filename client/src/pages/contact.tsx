@@ -74,7 +74,7 @@ export default function Contact() {
             {/* Contact Form */}
             <div className="modern-card p-10 rounded-3xl">
               <h2 className="text-3xl font-bold text-foreground mb-8">
-                Get Your <span className="text-gradient">Custom Quote</span>
+                Get Your <span className="text-accent font-bold">Custom Quote</span>
               </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
@@ -189,7 +189,7 @@ export default function Contact() {
             <div className="space-y-8">
               <div className="modern-card p-10 rounded-3xl">
                 <h3 className="text-2xl font-bold text-foreground mb-8">
-                  Get in <span className="text-gradient">Touch</span>
+                  Get in <span className="text-primary font-bold">Touch</span>
                 </h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
@@ -227,7 +227,7 @@ export default function Contact() {
               {/* Why Choose Us */}
               <div className="modern-card p-10 rounded-3xl">
                 <h3 className="text-2xl font-bold text-foreground mb-8">
-                  Why Choose <span className="text-gradient">FDES?</span>
+                  Why Choose <span className="text-secondary font-bold">FDES?</span>
                 </h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">

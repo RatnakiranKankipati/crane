@@ -9,7 +9,7 @@ export function IndustryImpactSection() {
             <span className="text-sm font-medium text-secondary">🏢 Industry Impact</span>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Transforming the <span className="text-gradient">Crane Industry</span>
+            Transforming the <span className="text-secondary font-bold">Crane Industry</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             See how our automation solutions are revolutionizing EOT crane manufacturing workflows across the industry

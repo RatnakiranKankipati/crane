@@ -42,7 +42,7 @@ export function FeaturesSection() {
             <span className="text-sm font-medium text-primary">⚡ Advanced Automation</span>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Complete <span className="text-gradient">Automation Features</span>
+            Complete <span className="text-primary font-bold">Automation Features</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Comprehensive tools designed specifically for EOT crane manufacturers to streamline every aspect of the design process

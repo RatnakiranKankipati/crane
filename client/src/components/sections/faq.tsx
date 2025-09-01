@@ -35,7 +35,7 @@ export function FAQSection() {
             <span className="text-sm font-medium text-accent">❓ FAQ</span>
           </div>
           <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-            Frequently Asked <span className="text-gradient">Questions</span>
+            Frequently Asked <span className="text-accent font-bold">Questions</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Common questions about our EOT crane design automation solutions

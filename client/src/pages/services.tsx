@@ -19,7 +19,7 @@ export default function Services() {
               <span className="text-sm font-medium text-primary">🛠️ Our Solutions</span>
             </div>
             <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Our <span className="text-gradient">Automation Solutions</span>
+              Our <span className="text-secondary font-bold">Automation Solutions</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Custom-built software tailored to your design standards with comprehensive automation capabilities
@@ -46,7 +46,7 @@ export default function Services() {
             </div>
             <div>
               <h2 className="text-3xl font-bold text-foreground mb-8">
-                Comprehensive <span className="text-gradient">Design Automation</span>
+                Comprehensive <span className="text-primary font-bold">Design Automation</span>
               </h2>
               <div className="space-y-8">
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">

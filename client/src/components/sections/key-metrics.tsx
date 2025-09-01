@@ -14,7 +14,7 @@ export function KeyMetricsSection() {
             <div key={index} className="text-center group">
               <div className="modern-card p-6 rounded-2xl hover:scale-110 transition-all duration-300">
                 <div className="text-3xl mb-3">{metric.icon}</div>
-                <div className="text-4xl lg:text-5xl font-bold text-gradient mb-3" data-testid={`metric-value-${index}`}>
+                <div className="text-4xl lg:text-5xl font-bold text-primary mb-3" data-testid={`metric-value-${index}`}>
                   {metric.value}
                 </div>
                 <p className="text-muted-foreground font-medium" data-testid={`metric-label-${index}`}>
