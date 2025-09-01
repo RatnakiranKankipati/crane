@@ -72,8 +72,10 @@ export default function Contact() {
           
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}
-            <div className="bg-card p-8 rounded-xl shadow-xl border">
-              <h2 className="text-2xl font-bold text-foreground mb-6">Get Your Custom Quote</h2>
+            <div className="modern-card p-10 rounded-3xl">
+              <h2 className="text-3xl font-bold text-foreground mb-8">
+                Get Your <span className="text-gradient">Custom Quote</span>
+              </h2>
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid md:grid-cols-2 gap-4">
                   <div>
@@ -170,7 +172,7 @@ export default function Contact() {
                 
                 <Button 
                   type="submit" 
-                  className="w-full bg-primary text-primary-foreground hover:bg-primary/90 py-4 px-6 text-lg"
+                  className="w-full bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 py-5 px-6 text-lg font-semibold shadow-lg"
                   disabled={isSubmitting}
                   data-testid="button-submit"
                 >
@@ -185,8 +187,10 @@ export default function Contact() {
             
             {/* Contact Information */}
             <div className="space-y-8">
-              <div className="bg-card p-8 rounded-xl shadow-lg border">
-                <h3 className="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
+              <div className="modern-card p-10 rounded-3xl">
+                <h3 className="text-2xl font-bold text-foreground mb-8">
+                  Get in <span className="text-gradient">Touch</span>
+                </h3>
                 <div className="space-y-6">
                   <div className="flex items-start space-x-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
@@ -221,8 +225,10 @@ export default function Contact() {
               </div>
               
               {/* Why Choose Us */}
-              <div className="bg-card p-8 rounded-xl shadow-lg border">
-                <h3 className="text-2xl font-bold text-foreground mb-6">Why Choose FDES?</h3>
+              <div className="modern-card p-10 rounded-3xl">
+                <h3 className="text-2xl font-bold text-foreground mb-8">
+                  Why Choose <span className="text-gradient">FDES?</span>
+                </h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
                     <CheckCircle className="w-5 h-5 text-primary" />

@@ -28,32 +28,37 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-20 bg-background">
+    <section className="py-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center bg-accent/10 border border-accent/20 px-4 py-2 rounded-full mb-6">
+            <span className="text-sm font-medium text-accent">❓ FAQ</span>
+          </div>
+          <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            Frequently Asked <span className="text-gradient">Questions</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
             Common questions about our EOT crane design automation solutions
           </p>
         </div>
         
         <div className="max-w-4xl mx-auto space-y-6">
           {faqs.map((faq, index) => (
-            <div key={index} className="bg-card p-6 rounded-xl shadow-lg border">
+            <div key={index} className="modern-card p-8 rounded-2xl">
               <button 
-                className="w-full text-left flex items-center justify-between"
+                className="w-full text-left flex items-center justify-between group"
                 onClick={() => toggleFAQ(index)}
                 data-testid={`faq-button-${index}`}
               >
-                <h3 className="text-xl font-bold text-foreground pr-4">{faq.question}</h3>
+                <h3 className="text-xl font-bold text-foreground pr-4 group-hover:text-primary transition-colors">{faq.question}</h3>
                 <ChevronDown 
-                  className={`w-6 h-6 text-primary transition-transform ${
-                    openIndex === index ? 'rotate-180' : ''
+                  className={`w-6 h-6 text-primary transition-all duration-300 ${
+                    openIndex === index ? 'rotate-180 scale-110' : 'group-hover:scale-110'
                   }`} 
                 />
               </button>
               {openIndex === index && (
-                <div className="mt-4 text-muted-foreground" data-testid={`faq-answer-${index}`}>
+                <div className="mt-6 text-muted-foreground leading-relaxed border-t border-border/50 pt-6" data-testid={`faq-answer-${index}`}>
                   {faq.answer}
                 </div>
               )}

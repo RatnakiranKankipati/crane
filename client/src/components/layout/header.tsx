@@ -23,16 +23,16 @@ export function Header() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+    <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50">
       <nav className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-2">
-            <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-primary-foreground font-bold text-xl">F</span>
+          <Link href="/" className="flex items-center space-x-3 group">
+            <div className="w-12 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+              <span className="text-white font-bold text-2xl">F</span>
             </div>
             <div>
-              <h1 className="text-xl font-bold text-foreground">FDES Technologies</h1>
-              <p className="text-xs text-muted-foreground">EOT Crane Design Automation</p>
+              <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">FDES Technologies</h1>
+              <p className="text-xs text-muted-foreground font-medium">EOT Crane Design Automation</p>
             </div>
           </Link>
 
@@ -51,7 +51,7 @@ export function Header() {
               </Link>
             ))}
             <Link href="/contact">
-              <Button className="bg-primary text-primary-foreground hover:bg-primary/90" data-testid="button-contact">
+              <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 shadow-lg" data-testid="button-contact">
                 Contact Us
               </Button>
             </Link>
@@ -81,7 +81,7 @@ export function Header() {
                   </Link>
                 ))}
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
-                  <Button className="w-full bg-primary text-primary-foreground hover:bg-primary/90" data-testid="mobile-button-contact">
+                  <Button className="w-full bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 shadow-lg" data-testid="mobile-button-contact">
                     Contact Us
                   </Button>
                 </Link>

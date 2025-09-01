@@ -2,12 +2,17 @@ import { Zap, TrendingUp, Shield } from "lucide-react";
 
 export function IndustryImpactSection() {
   return (
-    <section className="py-20 bg-muted">
+    <section className="py-24 bg-gradient-to-b from-muted/50 to-background">
       <div className="container mx-auto px-4">
-        <div className="text-center mb-16">
-          <h2 className="text-4xl font-bold text-foreground mb-4">Transforming the Crane Industry</h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            See how our automation solutions are revolutionizing EOT crane manufacturing workflows
+        <div className="text-center mb-20">
+          <div className="inline-flex items-center bg-secondary/10 border border-secondary/20 px-4 py-2 rounded-full mb-6">
+            <span className="text-sm font-medium text-secondary">🏢 Industry Impact</span>
+          </div>
+          <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
+            Transforming the <span className="text-gradient">Crane Industry</span>
+          </h2>
+          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+            See how our automation solutions are revolutionizing EOT crane manufacturing workflows across the industry
           </p>
         </div>
         
@@ -22,38 +27,38 @@ export function IndustryImpactSection() {
           </div>
           
           <div className="space-y-8">
-            <div className="bg-card p-6 rounded-xl shadow-lg border">
+            <div className="modern-card p-8 rounded-2xl">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
-                  <Zap className="w-6 h-6 text-primary" />
+                <div className="w-14 h-14 feature-icon-gradient rounded-full flex items-center justify-center shadow-lg">
+                  <Zap className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-foreground" data-testid="impact-title-1">Design Efficiency</h4>
-                  <p className="text-muted-foreground">Optimize design workflows and reduce manual efforts significantly</p>
+                  <h4 className="text-2xl font-bold text-foreground" data-testid="impact-title-1">Design Efficiency</h4>
+                  <p className="text-muted-foreground leading-relaxed">Optimize design workflows and reduce manual efforts significantly</p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-card p-6 rounded-xl shadow-lg border">
+            <div className="modern-card p-8 rounded-2xl">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
-                  <TrendingUp className="w-6 h-6 text-accent" />
+                <div className="w-14 h-14 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center shadow-lg">
+                  <TrendingUp className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-foreground" data-testid="impact-title-2">Enhanced Productivity</h4>
-                  <p className="text-muted-foreground">Deliver projects faster with automated calculation and drawing generation</p>
+                  <h4 className="text-2xl font-bold text-foreground" data-testid="impact-title-2">Enhanced Productivity</h4>
+                  <p className="text-muted-foreground leading-relaxed">Deliver projects faster with automated calculation and drawing generation</p>
                 </div>
               </div>
             </div>
             
-            <div className="bg-card p-6 rounded-xl shadow-lg border">
+            <div className="modern-card p-8 rounded-2xl">
               <div className="flex items-center space-x-4 mb-4">
-                <div className="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
-                  <Shield className="w-6 h-6 text-secondary" />
+                <div className="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center shadow-lg">
+                  <Shield className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <h4 className="text-xl font-bold text-foreground" data-testid="impact-title-3">Quality Assurance</h4>
-                  <p className="text-muted-foreground">Ensure consistent quality and compliance with industry standards</p>
+                  <h4 className="text-2xl font-bold text-foreground" data-testid="impact-title-3">Quality Assurance</h4>
+                  <p className="text-muted-foreground leading-relaxed">Ensure consistent quality and compliance with industry standards</p>
                 </div>
               </div>
             </div>
