@@ -30,7 +30,7 @@ export function CTASection() {
               <Button 
                 size="lg" 
                 variant="outline"
-                className="glass-effect border-2 border-white/30 text-primary-foreground hover:bg-white/20 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold"
+                className="bg-white text-slate-800 hover:bg-white/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-lg border-2 border-white"
                 data-testid="button-email"
               >
                 Email Us Directly

@@ -15,7 +15,7 @@ export function FAQSection() {
     },
     {
       question: "What support is provided after deployment?",
-      answer: "We provide a 3-month warranty period for issue resolution and ensure compatibility with at least three future versions of your CAD software."
+      answer: "We provide a 3-month warranty period for issue resolution and ensure compatibility with at least three future versions of your CAD software. For ongoing support, we offer paid annual maintenance contracts for customers requiring extended support and regular updates."
     },
     {
       question: "Can the software be deployed across multiple workstations?",

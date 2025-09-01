@@ -51,12 +51,8 @@ export default function Services() {
               <div className="space-y-8">
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
-                      <img 
-                        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
-                        alt="Engineering calculations" 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
+                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center shadow-lg">
+                      <Calculator className="w-8 h-8 text-white" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Automated IS Standard Calculations</h4>
@@ -67,12 +63,8 @@ export default function Services() {
                 
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
-                      <img 
-                        src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
-                        alt="CAD software interface" 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
+                    <div className="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center shadow-lg">
+                      <Box className="w-8 h-8 text-white" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">AutoCAD & 3D Integration</h4>
@@ -83,12 +75,8 @@ export default function Services() {
                 
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
-                      <img 
-                        src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
-                        alt="Technical drawings" 
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
-                      />
+                    <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center shadow-lg">
+                      <FileText className="w-8 h-8 text-white" />
                     </div>
                     <div>
                       <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">Automated Drawing Generation</h4>
@@ -103,33 +91,33 @@ export default function Services() {
           {/* Technical Specifications Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="feature-icon-gradient w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+              <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <FolderCog className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">2D Automation</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>AutoCAD integration</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>3-month development</span></li>
+                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Tailored development timeline</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Custom pricing based on requirements</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Complete drawing automation</span></li>
               </ul>
             </div>
             
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-secondary to-accent w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+              <div className="bg-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <Box className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-secondary transition-colors">3D Automation</h3>
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Inventor/Solidworks integration</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>3-4 month development</span></li>
+                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Customized development schedule</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Custom pricing based on requirements</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Complete 3D modeling automation</span></li>
               </ul>
             </div>
             
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="bg-gradient-to-br from-accent to-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+              <div className="bg-accent w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <Settings className="w-8 h-8 text-white" />
               </div>
               <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">Full Ownership</h3>
@@ -165,7 +153,7 @@ export default function Services() {
             </div>
             
             <Link href="/contact">
-              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
+              <Button size="lg" className="bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
                 Fill Inquiry Form for Custom Quote
               </Button>
             </Link>

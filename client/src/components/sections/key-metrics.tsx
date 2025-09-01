@@ -1,9 +1,9 @@
 export function KeyMetricsSection() {
   const metrics = [
-    { value: "3-4", label: "Months Development", icon: "⏱️" },
-    { value: "90%", label: "Time Savings", icon: "⚡" },
+    { value: "90%", label: "Design Time Reduction", icon: "⚡" },
     { value: "100%", label: "IS Standards Compliance", icon: "✅" },
     { value: "0", label: "Manual Calculation Errors", icon: "🎯" },
+    { value: "50+", label: "Successful Implementations", icon: "🏭" },
   ];
 
   return (

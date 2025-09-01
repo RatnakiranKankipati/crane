@@ -22,61 +22,85 @@ export default function Benefits() {
           </div>
           
           {/* Before/After Comparison */}
-          <div className="bg-card rounded-2xl shadow-xl border p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-12">Traditional vs Automated Process</h2>
-            <div className="grid lg:grid-cols-2 gap-12">
+          <div className="mb-16">
+            <h2 className="text-4xl font-bold text-center text-foreground mb-12">Traditional vs Automated Process</h2>
+            <div className="grid lg:grid-cols-2 gap-8">
               {/* Before */}
-              <div className="space-y-6">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
-                    <AlertCircle className="w-8 h-8 text-destructive" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">Traditional Method</h3>
+              <div className="bg-gradient-to-br from-red-50 to-red-100 p-8 rounded-2xl border-2 border-red-200 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-16 h-16 bg-red-500/10 rounded-full flex items-center justify-center">
+                  <AlertCircle className="w-8 h-8 text-red-500" />
+                </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-red-800 mb-2">Traditional Method</h3>
+                  <p className="text-red-600 text-sm">Time-consuming and error-prone</p>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                    <span className="text-muted-foreground">Manual calculations taking days</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/60 rounded-xl">
+                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-white text-xs font-bold">1</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-red-800">Manual Calculations</h4>
+                      <p className="text-red-600 text-sm">Days of manual work with high error risk</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                    <span className="text-muted-foreground">Error-prone design process</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/60 rounded-xl">
+                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-white text-xs font-bold">2</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-red-800">Repetitive Drawing</h4>
+                      <p className="text-red-600 text-sm">Time-consuming manual drafting</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                    <span className="text-muted-foreground">Repetitive drawing creation</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-destructive rounded-full"></div>
-                    <span className="text-muted-foreground">Inconsistent documentation</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/60 rounded-xl">
+                    <div className="w-8 h-8 bg-red-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <span className="text-white text-xs font-bold">3</span>
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-red-800">Quality Inconsistency</h4>
+                      <p className="text-red-600 text-sm">Variable documentation standards</p>
+                    </div>
                   </div>
                 </div>
               </div>
               
               {/* After */}
-              <div className="space-y-6">
-                <div className="text-center">
-                  <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
-                    <CheckCircle className="w-8 h-8 text-primary" />
-                  </div>
-                  <h3 className="text-2xl font-bold text-foreground mb-2">FDES Automation</h3>
+              <div className="bg-gradient-to-br from-green-50 to-blue-50 p-8 rounded-2xl border-2 border-green-200 relative overflow-hidden">
+                <div className="absolute top-4 right-4 w-16 h-16 bg-green-500/10 rounded-full flex items-center justify-center">
+                  <CheckCircle className="w-8 h-8 text-green-500" />
+                </div>
+                <div className="mb-6">
+                  <h3 className="text-2xl font-bold text-green-800 mb-2">FDES Automation</h3>
+                  <p className="text-green-600 text-sm">Fast, accurate, and reliable</p>
                 </div>
                 <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Calculations completed in hours</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/80 rounded-xl">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-green-800">Instant Calculations</h4>
+                      <p className="text-green-600 text-sm">Hours instead of days with 100% accuracy</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Zero calculation errors</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/80 rounded-xl">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-green-800">Automated Drawings</h4>
+                      <p className="text-green-600 text-sm">Generate complete drawing sets automatically</p>
+                    </div>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Automated drawing generation</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-primary rounded-full"></div>
-                    <span className="text-muted-foreground">Standardized documentation</span>
+                  <div className="flex items-start space-x-4 p-4 bg-white/80 rounded-xl">
+                    <div className="w-8 h-8 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0 mt-1">
+                      <CheckCircle className="w-5 h-5 text-white" />
+                    </div>
+                    <div>
+                      <h4 className="font-semibold text-green-800">Consistent Quality</h4>
+                      <p className="text-green-600 text-sm">Standardized output every time</p>
+                    </div>
                   </div>
                 </div>
               </div>
