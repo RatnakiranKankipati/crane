@@ -13,7 +13,7 @@ export function HeroSection() {
                 <span className="text-sm font-medium">🚀 Transform Your Manufacturing Process</span>
               </div>
               <h1 className="text-5xl lg:text-7xl font-bold leading-tight">
-                Automate Your <span className="text-accent bg-gradient-to-r from-accent to-accent/80 bg-clip-text text-transparent">EOT Crane Design</span> Workflow
+                Automate Your <span className="text-accent font-bold">EOT Crane Design</span> Workflow
               </h1>
               <p className="text-xl lg:text-2xl text-primary-foreground/90 leading-relaxed">
                 Cut design time by 90% with our intelligent automation software. From IS standard calculations to complete drawing generation.
