@@ -21,13 +21,31 @@ export default function Process() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Manufacturing facility with engineers collaborating" 
-                className="rounded-xl shadow-lg w-full h-auto"
-                data-testid="img-manufacturing"
-              />
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Manufacturing facility with engineers collaborating" 
+                  className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                  data-testid="img-manufacturing"
+                />
+                <div className="absolute inset-0 bg-gradient-to-tr from-primary/20 to-secondary/20"></div>
+              </div>
+              
+              {/* Floating process badges */}
+              <div className="absolute -top-4 -right-4 glass-effect p-4 rounded-xl shadow-lg">
+                <div className="flex items-center space-x-2">
+                  <div className="w-3 h-3 bg-primary rounded-full animate-pulse"></div>
+                  <span className="text-sm font-medium text-foreground">Live Process</span>
+                </div>
+              </div>
+              
+              <div className="absolute -bottom-4 -left-4 glass-effect p-4 rounded-xl shadow-lg">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-primary">3-4</div>
+                  <div className="text-xs text-muted-foreground">Months Timeline</div>
+                </div>
+              </div>
             </div>
             <div>
               <div className="space-y-8">

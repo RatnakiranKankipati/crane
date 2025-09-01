@@ -7,8 +7,8 @@ export function KeyMetricsSection() {
   ];
 
   return (
-    <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5">
-      <div className="container mx-auto px-4">
+    <section className="py-20 bg-gradient-to-r from-primary/5 via-secondary/5 to-accent/5 industrial-pattern relative">
+      <div className="container mx-auto px-4 relative z-10">
         <div className="grid md:grid-cols-4 gap-8">
           {metrics.map((metric, index) => (
             <div key={index} className="text-center group">

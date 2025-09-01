@@ -17,18 +17,41 @@ export function IndustryImpactSection() {
         </div>
         
         <div className="grid lg:grid-cols-2 gap-12 items-center">
-          <div>
-            <img 
-              src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-              alt="EOT crane manufacturing facility with overhead cranes" 
-              className="rounded-xl shadow-lg w-full h-auto"
-              data-testid="img-facility"
-            />
+          <div className="relative">
+            <div className="grid grid-cols-2 gap-4">
+              <img 
+                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                alt="EOT crane in manufacturing facility" 
+                className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                data-testid="img-facility-1"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                alt="Industrial manufacturing process" 
+                className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
+                data-testid="img-facility-2"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                alt="Engineering CAD workstation" 
+                className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 -mt-8"
+                data-testid="img-facility-3"
+              />
+              <img 
+                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                alt="Technical drawings and calculations" 
+                className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                data-testid="img-facility-4"
+              />
+            </div>
           </div>
           
           <div className="space-y-8">
-            <div className="modern-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
+            <div className="modern-card p-8 rounded-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
+                <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="" className="w-full h-full object-cover rounded-bl-2xl" />
+              </div>
+              <div className="flex items-center space-x-4 mb-4 relative z-10">
                 <div className="w-14 h-14 feature-icon-gradient rounded-full flex items-center justify-center shadow-lg">
                   <Zap className="w-7 h-7 text-white" />
                 </div>
@@ -39,8 +62,11 @@ export function IndustryImpactSection() {
               </div>
             </div>
             
-            <div className="modern-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
+            <div className="modern-card p-8 rounded-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
+                <img src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="" className="w-full h-full object-cover rounded-bl-2xl" />
+              </div>
+              <div className="flex items-center space-x-4 mb-4 relative z-10">
                 <div className="w-14 h-14 bg-gradient-to-br from-accent to-secondary rounded-full flex items-center justify-center shadow-lg">
                   <TrendingUp className="w-7 h-7 text-white" />
                 </div>
@@ -51,8 +77,11 @@ export function IndustryImpactSection() {
               </div>
             </div>
             
-            <div className="modern-card p-8 rounded-2xl">
-              <div className="flex items-center space-x-4 mb-4">
+            <div className="modern-card p-8 rounded-2xl relative overflow-hidden group">
+              <div className="absolute top-0 right-0 w-24 h-24 opacity-10 group-hover:opacity-20 transition-opacity">
+                <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" alt="" className="w-full h-full object-cover rounded-bl-2xl" />
+              </div>
+              <div className="flex items-center space-x-4 mb-4 relative z-10">
                 <div className="w-14 h-14 bg-gradient-to-br from-secondary to-primary rounded-full flex items-center justify-center shadow-lg">
                   <Shield className="w-7 h-7 text-white" />
                 </div>

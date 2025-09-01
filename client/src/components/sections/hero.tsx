@@ -61,8 +61,8 @@ export function HeroSection() {
           <div className="relative">
             <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Industrial automation software interface" 
+                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                alt="EOT crane in modern manufacturing facility" 
                 className="rounded-2xl shadow-2xl w-full h-auto border-4 border-white/20"
                 data-testid="img-hero"
               />

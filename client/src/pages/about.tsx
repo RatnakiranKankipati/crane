@@ -55,13 +55,26 @@ export default function About() {
               </div>
             </div>
             
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Modern engineering office with CAD workstations" 
-                className="rounded-xl shadow-lg w-full h-auto"
-                data-testid="img-office"
-              />
+            <div className="relative">
+              <div className="relative overflow-hidden rounded-2xl">
+                <img 
+                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  alt="Modern engineering office with CAD workstations" 
+                  className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
+                  data-testid="img-office"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-primary/20 to-accent/20"></div>
+              </div>
+              
+              {/* Team expertise badge */}
+              <div className="absolute -top-4 -left-4 glass-effect p-4 rounded-xl shadow-lg">
+                <div className="flex items-center space-x-2">
+                  <div className="w-8 h-8 feature-icon-gradient rounded-full flex items-center justify-center">
+                    <span className="text-white text-sm font-bold">F</span>
+                  </div>
+                  <span className="text-sm font-medium text-foreground">Expert Team</span>
+                </div>
+              </div>
             </div>
           </div>
 

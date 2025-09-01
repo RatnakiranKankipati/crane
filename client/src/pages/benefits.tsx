@@ -85,36 +85,72 @@ export default function Benefits() {
           
           {/* Benefits Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
-            <div className="bg-card p-8 rounded-xl shadow-lg border">
-              <div className="bg-accent/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <DollarSign className="w-8 h-8 text-accent" />
+            <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  alt="Financial calculations and cost savings" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-12 h-12 bg-white/90 rounded-xl flex items-center justify-center">
+                    <DollarSign className="w-6 h-6 text-accent" />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Time & Cost Savings</h3>
-              <p className="text-muted-foreground mb-4">Reduce design time from days to hours while minimizing engineering effort through intelligent automation.</p>
-              <div className="bg-muted p-4 rounded-lg">
-                <p className="text-sm font-semibold text-foreground">ROI: 300-500% within first year</p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Time & Cost Savings</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">Reduce design time from days to hours while minimizing engineering effort through intelligent automation.</p>
+                <div className="bg-gradient-to-r from-accent/10 to-accent/5 p-4 rounded-xl border border-accent/20">
+                  <p className="text-sm font-semibold text-accent">ROI: 300-500% within first year</p>
+                </div>
               </div>
             </div>
             
-            <div className="bg-card p-8 rounded-xl shadow-lg border">
-              <div className="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <CheckCircle className="w-8 h-8 text-primary" />
+            <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  alt="Quality control and engineering precision" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-12 h-12 bg-white/90 rounded-xl flex items-center justify-center">
+                    <CheckCircle className="w-6 h-6 text-primary" />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Error Reduction</h3>
-              <p className="text-muted-foreground mb-4">Standardized calculations eliminate manual errors and ensure 100% compliance with IS standards.</p>
-              <div className="bg-muted p-4 rounded-lg">
-                <p className="text-sm font-semibold text-foreground">Zero calculation errors guaranteed</p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Error Reduction</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">Standardized calculations eliminate manual errors and ensure 100% compliance with IS standards.</p>
+                <div className="bg-gradient-to-r from-primary/10 to-primary/5 p-4 rounded-xl border border-primary/20">
+                  <p className="text-sm font-semibold text-primary">Zero calculation errors guaranteed</p>
+                </div>
               </div>
             </div>
             
-            <div className="bg-card p-8 rounded-xl shadow-lg border">
-              <div className="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
-                <TrendingUp className="w-8 h-8 text-secondary" />
+            <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+              <div className="h-48 relative overflow-hidden">
+                <img 
+                  src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  alt="Scalable manufacturing operations" 
+                  className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
+                <div className="absolute bottom-4 left-4">
+                  <div className="w-12 h-12 bg-white/90 rounded-xl flex items-center justify-center">
+                    <TrendingUp className="w-6 h-6 text-secondary" />
+                  </div>
+                </div>
               </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4">Scalability</h3>
-              <p className="text-muted-foreground mb-4">User-friendly interface enables quick adoption across multiple workstations and engineering teams.</p>
-              <div className="bg-muted p-4 rounded-lg">
-                <p className="text-sm font-semibold text-foreground">Unlimited workstation deployment</p>
+              <div className="p-8">
+                <h3 className="text-2xl font-bold text-foreground mb-4">Scalability</h3>
+                <p className="text-muted-foreground mb-4 leading-relaxed">User-friendly interface enables quick adoption across multiple workstations and engineering teams.</p>
+                <div className="bg-gradient-to-r from-secondary/10 to-secondary/5 p-4 rounded-xl border border-secondary/20">
+                  <p className="text-sm font-semibold text-secondary">Unlimited workstation deployment</p>
+                </div>
               </div>
             </div>
           </div>

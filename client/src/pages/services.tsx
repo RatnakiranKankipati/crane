@@ -27,44 +27,73 @@ export default function Services() {
           </div>
           
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
-            <div>
-              <img 
-                src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
-                alt="Engineering design process with technical drawings" 
-                className="rounded-xl shadow-lg w-full h-auto"
-                data-testid="img-design-process"
-              />
+            <div className="relative">
+              <div className="grid grid-cols-2 gap-4">
+                <img 
+                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  alt="CAD engineering workstation" 
+                  className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                  data-testid="img-cad-workstation"
+                />
+                <img 
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  alt="Technical calculations and reports" 
+                  className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
+                  data-testid="img-calculations"
+                />
+              </div>
+              <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-xl"></div>
             </div>
             <div>
-              <h2 className="text-3xl font-bold text-foreground mb-6">Comprehensive Design Automation</h2>
-              <div className="space-y-6">
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Calculator className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-foreground mb-2">Automated IS Standard Calculations</h4>
-                    <p className="text-muted-foreground">Standardized calculations eliminate manual errors and ensure compliance with IS standards for all crane components.</p>
-                  </div>
-                </div>
-                
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <Box className="w-6 h-6 text-primary" />
-                  </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-foreground mb-2">AutoCAD & 3D Integration</h4>
-                    <p className="text-muted-foreground">Seamless integration with AutoCAD (2D) and Autodesk Inventor/Solidworks (3D) for complete design workflow automation.</p>
+              <h2 className="text-3xl font-bold text-foreground mb-8">
+                Comprehensive <span className="text-gradient">Design Automation</span>
+              </h2>
+              <div className="space-y-8">
+                <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                        alt="Engineering calculations" 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Automated IS Standard Calculations</h4>
+                      <p className="text-muted-foreground leading-relaxed">Standardized calculations eliminate manual errors and ensure compliance with IS standards for all crane components.</p>
+                    </div>
                   </div>
                 </div>
                 
-                <div className="flex items-start space-x-4">
-                  <div className="bg-primary/10 p-3 rounded-lg">
-                    <FileText className="w-6 h-6 text-primary" />
+                <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                        alt="CAD software interface" 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-secondary transition-colors">AutoCAD & 3D Integration</h4>
+                      <p className="text-muted-foreground leading-relaxed">Seamless integration with AutoCAD (2D) and Autodesk Inventor/Solidworks (3D) for complete design workflow automation.</p>
+                    </div>
                   </div>
-                  <div>
-                    <h4 className="text-xl font-semibold text-foreground mb-2">Automated Drawing Generation</h4>
-                    <p className="text-muted-foreground">Generate GA drawings, fabrication drawings, and BOMs automatically based on your company's specific standards.</p>
+                </div>
+                
+                <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
+                  <div className="flex items-start space-x-4">
+                    <div className="w-16 h-16 rounded-xl overflow-hidden shadow-lg">
+                      <img 
+                        src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=100&h=100" 
+                        alt="Technical drawings" 
+                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-300"
+                      />
+                    </div>
+                    <div>
+                      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-accent transition-colors">Automated Drawing Generation</h4>
+                      <p className="text-muted-foreground leading-relaxed">Generate GA drawings, fabrication drawings, and BOMs automatically based on your company's specific standards.</p>
+                    </div>
                   </div>
                 </div>
               </div>
