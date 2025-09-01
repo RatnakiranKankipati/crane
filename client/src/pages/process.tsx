@@ -84,20 +84,26 @@ export default function Process() {
             </div>
           </div>
           
-          {/* Timeline Visualization */}
+          {/* Custom Solution Overview */}
           <div className="bg-card rounded-2xl shadow-xl border p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-12">Project Timeline</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-12">Completely Customized Solutions</h2>
+            <div className="text-center mb-8">
+              <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+                Every project is unique, and so is our solution. We build automation software tailored specifically to your company's calculation methods, drawing standards, and workflow requirements.
+              </p>
+            </div>
+            
             <div className="grid md:grid-cols-2 gap-12">
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-primary">2D Software Development</h3>
+                <h3 className="text-2xl font-bold text-primary">2D AutoCAD Automation</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
                     <span className="font-semibold text-foreground">Development Duration</span>
-                    <span className="text-primary font-bold">~3 months</span>
+                    <span className="text-primary font-bold">3-4 months</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Investment Range</span>
-                    <span className="text-primary font-bold">Rs. 12-15 lakhs</span>
+                    <span className="font-semibold text-foreground">Investment</span>
+                    <span className="text-accent font-bold">Custom Quote</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
                     <span className="font-semibold text-foreground">Platform</span>
@@ -107,21 +113,33 @@ export default function Process() {
               </div>
               
               <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-primary">3D Software Development</h3>
+                <h3 className="text-2xl font-bold text-primary">3D Modeling Automation</h3>
                 <div className="space-y-4">
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
                     <span className="font-semibold text-foreground">Development Duration</span>
-                    <span className="text-primary font-bold">~3-4 months</span>
+                    <span className="text-primary font-bold">4-5 months</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Investment Range</span>
-                    <span className="text-primary font-bold">Rs. 20-25 lakhs</span>
+                    <span className="font-semibold text-foreground">Investment</span>
+                    <span className="text-accent font-bold">Custom Quote</span>
                   </div>
                   <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
                     <span className="font-semibold text-foreground">Platform</span>
                     <span className="text-primary font-bold">Inventor/Solidworks</span>
                   </div>
                 </div>
+              </div>
+            </div>
+            
+            <div className="mt-8 p-6 bg-gradient-to-r from-accent/10 to-secondary/10 rounded-xl border border-accent/20">
+              <div className="text-center">
+                <h4 className="text-xl font-bold text-foreground mb-2">Get Your Custom Quote</h4>
+                <p className="text-muted-foreground mb-4">Project cost depends on your specific requirements, complexity, and customization needs.</p>
+                <Link href="/contact">
+                  <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 px-6 py-3" data-testid="button-quote-process">
+                    Request Detailed Quote
+                  </Button>
+                </Link>
               </div>
             </div>
           </div>

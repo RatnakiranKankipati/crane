@@ -110,7 +110,7 @@ export default function Services() {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>AutoCAD integration</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>3-month development</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Rs. 12-15 lakhs investment</span></li>
+                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Custom pricing based on requirements</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Complete drawing automation</span></li>
               </ul>
             </div>
@@ -123,7 +123,7 @@ export default function Services() {
               <ul className="space-y-3 text-muted-foreground">
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Inventor/Solidworks integration</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>3-4 month development</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Rs. 20-25 lakhs investment</span></li>
+                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Custom pricing based on requirements</span></li>
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Complete 3D modeling automation</span></li>
               </ul>
             </div>
@@ -142,20 +142,37 @@ export default function Services() {
             </div>
           </div>
 
-          {/* CTA Section */}
-          <div className="text-center hero-gradient p-16 rounded-3xl text-primary-foreground relative overflow-hidden">
-            <div className="relative z-10">
-              <h2 className="text-4xl lg:text-5xl font-bold mb-6">Ready to Automate Your Design Process?</h2>
-              <p className="text-xl text-primary-foreground/90 mb-10 max-w-2xl mx-auto leading-relaxed">
-                Contact us to discuss your specific requirements and get a customized solution.
-              </p>
-              <Link href="/contact">
-                <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
-                  Get Custom Quote
-                </Button>
-              </Link>
+          {/* Custom Quote CTA */}
+          <div className="modern-card p-12 rounded-3xl text-center">
+            <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground">Get Your Custom Quote</h2>
+            <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
+              Every project is unique. Our pricing is customized based on your specific requirements, complexity, and desired features. Fill out our detailed inquiry form to receive a personalized quote.
+            </p>
+            
+            <div className="grid md:grid-cols-3 gap-6 mb-8">
+              <div className="p-4 bg-primary/5 rounded-xl border border-primary/20">
+                <h4 className="font-bold text-primary mb-2">Requirements Analysis</h4>
+                <p className="text-sm text-muted-foreground">We review your needs</p>
+              </div>
+              <div className="p-4 bg-secondary/5 rounded-xl border border-secondary/20">
+                <h4 className="font-bold text-secondary mb-2">Custom Development Plan</h4>
+                <p className="text-sm text-muted-foreground">Tailored solution design</p>
+              </div>
+              <div className="p-4 bg-accent/5 rounded-xl border border-accent/20">
+                <h4 className="font-bold text-accent mb-2">Detailed Quote</h4>
+                <p className="text-sm text-muted-foreground">Transparent pricing</p>
+              </div>
             </div>
-            <div className="absolute top-0 right-0 w-1/3 h-full bg-gradient-to-l from-white/5 to-transparent"></div>
+            
+            <Link href="/contact">
+              <Button size="lg" className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
+                Fill Inquiry Form for Custom Quote
+              </Button>
+            </Link>
+            
+            <p className="text-sm text-muted-foreground mt-4">
+              Response within 24 hours with detailed proposal
+            </p>
           </div>
         </div>
       </div>

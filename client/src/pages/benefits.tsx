@@ -103,7 +103,7 @@ export default function Benefits() {
                 <h3 className="text-2xl font-bold text-foreground mb-4">Time & Cost Savings</h3>
                 <p className="text-muted-foreground mb-4 leading-relaxed">Reduce design time from days to hours while minimizing engineering effort through intelligent automation.</p>
                 <div className="bg-gradient-to-r from-accent/10 to-accent/5 p-4 rounded-xl border border-accent/20">
-                  <p className="text-sm font-semibold text-accent">ROI: 300-500% within first year</p>
+                  <p className="text-sm font-semibold text-accent">Results vary based on project complexity</p>
                 </div>
               </div>
             </div>
@@ -155,22 +155,25 @@ export default function Benefits() {
             </div>
           </div>
 
-          {/* ROI Calculation */}
+          {/* Custom Solution Benefits */}
           <div className="bg-gradient-to-r from-primary to-secondary p-12 rounded-2xl text-primary-foreground mb-16">
             <div className="text-center">
-              <h2 className="text-3xl font-bold mb-6">Calculate Your Return on Investment</h2>
+              <h2 className="text-3xl font-bold mb-6">Custom Solutions for Maximum Impact</h2>
+              <p className="text-xl text-primary-foreground/90 mb-8 max-w-3xl mx-auto">
+                Every automation solution is built specifically for your company's needs, ensuring optimal results and maximum return on investment.
+              </p>
               <div className="grid md:grid-cols-3 gap-8">
                 <div>
-                  <div className="text-4xl font-bold mb-2">90%</div>
-                  <p className="text-primary-foreground/90">Design Time Reduction</p>
+                  <div className="text-4xl font-bold mb-2">Custom</div>
+                  <p className="text-primary-foreground/90">Calculation Logic</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">60%</div>
-                  <p className="text-primary-foreground/90">Faster Project Delivery</p>
+                  <div className="text-4xl font-bold mb-2">Tailored</div>
+                  <p className="text-primary-foreground/90">Drawing Standards</p>
                 </div>
                 <div>
-                  <div className="text-4xl font-bold mb-2">100%</div>
-                  <p className="text-primary-foreground/90">Error Elimination</p>
+                  <div className="text-4xl font-bold mb-2">Complete</div>
+                  <p className="text-primary-foreground/90">Software Ownership</p>
                 </div>
               </div>
             </div>
@@ -180,7 +183,7 @@ export default function Benefits() {
           <div className="text-center bg-muted p-12 rounded-2xl">
             <h2 className="text-3xl font-bold text-foreground mb-4">Ready to Transform Your Design Process?</h2>
             <p className="text-xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-              Start saving time and reducing costs with our proven automation solutions.
+              Each solution is priced based on your specific requirements and complexity. Contact us for a detailed consultation.
             </p>
             <Link href="/contact">
               <Button size="lg" className="bg-primary text-primary-foreground hover:bg-primary/90 px-8 py-4 text-lg" data-testid="button-contact-benefits">
