@@ -6,20 +6,28 @@ export function FAQSection() {
 
   const faqs = [
     {
-      question: "What crane types are supported by your automation software?",
-      answer: "Our software supports all types of EOT (Electric Overhead Traveling) cranes including single girder, double girder, and gantry cranes with various lifting capacities and spans."
+      question: "How does the software help reduce design time?",
+      answer: "By automating repetitive tasks such as calculations and drawing generation, our software can reduce the total design time by up to 50%, allowing your engineers to focus on more value-added tasks and speeding up the time-to-market for your products."
     },
     {
-      question: "How does the customization process work?",
-      answer: "We begin with detailed requirement gathering to understand your calculation methods, drawing standards, and company-specific workflows. The software is then built from scratch to match your exact specifications."
+      question: "What design standards does the software comply with?",
+      answer: "Built to comply with IS 3177, IS 807, and IS 800, our software guarantees that every design meets the required safety and legal standards, ensuring smooth approvals and reducing the risk of costly errors during manufacturing."
     },
     {
-      question: "What support is provided after deployment?",
-      answer: "We provide a 3-month warranty period for issue resolution and ensure compatibility with at least three future versions of your CAD software. For ongoing support, we offer paid annual maintenance contracts for customers requiring extended support and regular updates."
+      question: "Can the software generate both 3D models and 2D drawings?",
+      answer: "Yes, our software is capable of generating detailed 3D models and 2D drawings. It automates the process, allowing for quick and accurate creation of both types of design outputs, which can be used for manufacturing and documentation."
     },
     {
-      question: "Can the software be deployed across multiple workstations?",
-      answer: "Yes, since you own the software completely, there are no restrictions on installations or usage across your organization's workstations."
+      question: "How does the software handle design calculations?",
+      answer: "The software automates design calculations based on input parameters and the relevant Indian standards. This ensures that all calculations are precise and aligned with industry requirements, significantly reducing the risk of manual errors."
+    },
+    {
+      question: "Is the software customizable to our specific design needs?",
+      answer: "Absolutely! Our software is highly customizable. We work closely with your team to tailor the automation tools to fit your specific design processes, ensuring seamless integration with your existing workflows."
+    },
+    {
+      question: "What types of drawings can the software produce?",
+      answer: "The software can produce a variety of drawings including General Arrangement (GA) drawings, fabrication drawings, and detailed part drawings. These outputs are crucial for different stages of the manufacturing process."
     }
   ];
 

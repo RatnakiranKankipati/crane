@@ -18,8 +18,16 @@ export default function About() {
             <div>
               <h1 className="text-5xl font-bold text-foreground mb-6">About FDES Technologies</h1>
               <p className="text-xl text-muted-foreground mb-8">
-                We are specialists in engineering design automation, offering tailored software solutions 
-                specifically for EOT crane manufacturers across the globe.
+                At FDES Technologies, we specialize in accelerating the EOT crane design process. Our 
+                automated solutions reduce the design cycle time, ensure compliance with industry 
+                standards, and deliver precise 3D models and 2D drawings, all while minimizing 
+                human errors.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                Our solutions are designed to integrate seamlessly into your existing workflows and 
+                CAD software, enabling your team to produce detailed 3D models, 2D drawings, GA 
+                drawings, and accurate design calculations with ease. We are committed to 
+                empowering your design process, helping you stay ahead in the competitive industry.
               </p>
               
               <div className="space-y-6">
@@ -29,7 +37,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2">Engineering Expertise</h4>
-                    <p className="text-muted-foreground">Deep understanding of EOT crane design principles and IS standards compliance requirements.</p>
+                    <p className="text-muted-foreground">Deep understanding of EOT crane design principles with strict compliance to IS 3177, IS 807, and IS 800 standards.</p>
                   </div>
                 </div>
                 
@@ -133,8 +141,8 @@ export default function About() {
                 <p className="text-primary-foreground/90">Client Satisfaction</p>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">90%</div>
-                <p className="text-primary-foreground/90">Time Reduction Achieved</p>
+                <div className="text-4xl font-bold mb-2">50%</div>
+                <p className="text-primary-foreground/90">Design Time Reduction</p>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">0</div>

@@ -130,6 +130,62 @@ export default function Services() {
             </div>
           </div>
 
+          {/* CAD Software Integration */}
+          <div className="bg-slate-50 p-12 rounded-2xl mb-16">
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">Supported CAD Software</h2>
+            <p className="text-xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
+              Our software is designed to integrate seamlessly with the following CAD applications
+            </p>
+            <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+              <div className="bg-white p-8 rounded-xl shadow-lg border">
+                <h3 className="text-2xl font-bold text-primary mb-4 text-center">2D Application</h3>
+                <div className="text-center">
+                  <div className="text-6xl font-bold text-primary mb-2">AutoCAD</div>
+                  <p className="text-muted-foreground">Complete 2D drawing automation</p>
+                </div>
+              </div>
+              <div className="bg-white p-8 rounded-xl shadow-lg border">
+                <h3 className="text-2xl font-bold text-secondary mb-4 text-center">3D Applications</h3>
+                <div className="space-y-4">
+                  <div className="text-center p-4 bg-secondary/5 rounded-lg">
+                    <div className="text-2xl font-bold text-secondary">SolidWorks</div>
+                  </div>
+                  <div className="text-center p-4 bg-secondary/5 rounded-lg">
+                    <div className="text-2xl font-bold text-secondary">Autodesk Inventor</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          {/* Optional Add-ons */}
+          <div className="mb-16">
+            <h2 className="text-3xl font-bold text-center text-foreground mb-12">Optional Add-Ons</h2>
+            <div className="grid md:grid-cols-3 gap-8">
+              <div className="bg-white border border-slate-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                  <Settings className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Advanced Customization</h3>
+                <p className="text-muted-foreground leading-relaxed">Development of custom design modules or features that are specific to your company's unique requirements (e.g., special crane calculations or machinery arrangements).</p>
+              </div>
+              <div className="bg-white border border-slate-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                  <FolderCog className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">ERP/PLM Integration</h3>
+                <p className="text-muted-foreground leading-relaxed">Integration of the software with your existing ERP or PLM systems to streamline the ordering process and data management workflows.</p>
+              </div>
+              <div className="bg-white border border-slate-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
+                <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                  <Wrench className="w-8 h-8 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-foreground mb-4">Other CAD Tools</h3>
+                <p className="text-muted-foreground leading-relaxed">If your company uses additional CAD tools (other than our standard supported software), we can integrate the solution to ensure smooth data exchange and workflow between systems.</p>
+              </div>
+            </div>
+          </div>
+
           {/* Custom Quote CTA */}
           <div className="modern-card p-12 rounded-3xl text-center">
             <h2 className="text-4xl lg:text-5xl font-bold mb-6 text-foreground">Get Your Custom Quote</h2>

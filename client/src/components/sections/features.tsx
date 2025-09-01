@@ -5,7 +5,7 @@ export function FeaturesSection() {
     {
       image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       title: "IS Standard Calculations",
-      description: "Automated calculations following Indian Standards with comprehensive reports for all crane components and structural elements."
+      description: "Built to comply with IS 3177, IS 807, and IS 800, our software guarantees that every design meets the required safety and legal standards, ensuring smooth approvals and reducing the risk of costly errors during manufacturing."
     },
     {
       image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
@@ -15,12 +15,12 @@ export function FeaturesSection() {
     {
       image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       title: "Drawing Generation",
-      description: "Automatic generation of GA drawings, fabrication drawings, and BOMs based on your specific company templates."
+      description: "The software can produce a variety of drawings including General Arrangement (GA) drawings, fabrication drawings, and detailed part drawings. These outputs are crucial for different stages of the manufacturing process and are generated automatically based on your company standards."
     },
     {
       image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
       title: "Customization Options",
-      description: "Flexible software architecture allows complete customization based on your specific design standards and workflows."
+      description: "We understand that every crane design process is unique. Our solution is highly customizable to match your specific design standards and operational requirements. We work closely with your team to gather the necessary inputs, ensuring seamless integration into your existing workflows."
     },
     {
       image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
