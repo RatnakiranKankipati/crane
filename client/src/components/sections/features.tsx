@@ -35,16 +35,16 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/50 tech-grid relative">
-      <div className="container mx-auto px-4 relative z-10">
+    <section className="py-24 bg-slate-50 relative">
+      <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center bg-primary/5 border border-primary/20 px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-primary">⚡ Advanced Automation</span>
+          <div className="inline-flex items-center bg-primary text-white px-4 py-2 rounded-full mb-6">
+            <span className="text-sm font-medium">⚡ Advanced Automation</span>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
+          <h2 className="text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
             Complete <span className="text-primary font-bold">Automation Features</span>
           </h2>
-          <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
+          <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">
             Comprehensive tools designed specifically for EOT crane manufacturers to streamline every aspect of the design process
           </p>
         </div>
@@ -52,7 +52,7 @@ export function FeaturesSection() {
         <div className="grid lg:grid-cols-3 gap-8">
           {features.map((feature, index) => {
             return (
-              <div key={index} className="modern-card p-0 rounded-2xl group overflow-hidden">
+              <div key={index} className="bg-white border border-slate-200 shadow-lg hover:shadow-xl p-0 rounded-2xl group overflow-hidden transition-all duration-300 hover:scale-105">
                 <div className="relative h-48 overflow-hidden">
                   <img 
                     src={feature.image}
@@ -67,10 +67,10 @@ export function FeaturesSection() {
                   </div>
                 </div>
                 <div className="p-8">
-                  <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors" data-testid={`feature-title-${index}`}>
+                  <h3 className="text-2xl font-bold text-slate-800 mb-4 group-hover:text-primary transition-colors" data-testid={`feature-title-${index}`}>
                     {feature.title}
                   </h3>
-                  <p className="text-muted-foreground leading-relaxed" data-testid={`feature-description-${index}`}>
+                  <p className="text-slate-600 leading-relaxed" data-testid={`feature-description-${index}`}>
                     {feature.description}
                   </p>
                 </div>
