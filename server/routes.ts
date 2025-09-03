@@ -13,12 +13,12 @@ export async function registerRoutes(app: Express): Promise<Server> {
       
       // Create nodemailer transporter
       const transporter = nodemailer.createTransporter({
-        host: process.env.SMTP_HOST || "smtp.gmail.com",
-        port: parseInt(process.env.SMTP_PORT || "587"),
+        host: "smtp.gmail.com",
+        port: 587,
         secure: false,
         auth: {
-          user: process.env.SMTP_USER || process.env.EMAIL_USER,
-          pass: process.env.SMTP_PASS || process.env.EMAIL_PASS,
+          user:"ita5555558@gmail.com",
+          pass:"vmrw vugw cqpj nhai",
         },
       });
 
@@ -41,7 +41,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
       // Send email
       await transporter.sendMail({
-        from: process.env.SMTP_USER || process.env.EMAIL_USER,
+        from: "ita5555558@gmail.com",
         to: "sales@fdestech.com",
         subject: `New EOT Crane Automation Inquiry from ${validatedData.company}`,
         text: emailContent,
