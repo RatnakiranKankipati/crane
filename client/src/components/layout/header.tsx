@@ -3,6 +3,9 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
+import logo from "../../images/EOT Blue Background Logo.png"
+import logo1 from "../../images/fdes 1.png"
+
 
 export function Header() {
   const [location] = useLocation();
@@ -24,17 +27,23 @@ export function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50">
-      <nav className="container mx-auto px-4 py-4">
+      <nav className="container mx-auto px-4 py-1">
         <div className="flex items-center justify-between">
-          <Link href="/" className="flex items-center space-x-3 group">
-            <div className="w-12 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
+          <Link href="/" className="flex items-center space-x-3 group" >
+            {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
               <span className="text-white font-bold text-2xl">F</span>
-              {/* <img className="w-12 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" src="https://fdestech.com/wp-content/uploads/2024/09/fdes_logo_only_high_res.png"/> */}
-            </div>
-            <div>
-              <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">FDES Technologies</h1>
+              <img style={{width:"120px",height:"90px"}} src={logo} />
+              <img className="feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" style={{width:"70px",height:"70px"}} src={logo}/>
+            </div> */}
+              {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"> */}
+              {/* <span className="text-white font-bold text-2xl">F</span> */}
+              {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
+              <img  style={{width:"30%"}} src={logo1}/>
+            {/* </div> */}
+            {/* <div>
+              <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">EOT Crane Design Automation</h1>
               <p className="text-xs text-muted-foreground font-medium">EOT Crane Design Automation</p>
-            </div>
+            </div> */}
           </Link>
 
           {/* Desktop Navigation */}

@@ -50,7 +50,10 @@ export default function Process() {
             <div>
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">1</div>
+                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">1</div> */}
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"50px",height:"35px",borderRadius:"50%"}}>1
+
+                  </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Requirement Gathering</h4>
                     <p className="text-muted-foreground">We analyze your calculation reports, drawing standards, and specific company requirements to understand your workflow.</p>
@@ -58,7 +61,10 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">2</div>
+                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">2</div> */}
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"45px",height:"35px",borderRadius:"50%"}}>2
+
+                  </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Custom Development</h4>
                     <p className="text-muted-foreground">Our team develops tailored logic and templates that match your exact design standards and calculation methods.</p>
@@ -66,7 +72,10 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">3</div>
+                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">3</div> */}
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"45px",height:"35px",borderRadius:"50%"}}>3
+
+                  </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Testing & Validation</h4>
                     <p className="text-muted-foreground">Comprehensive testing ensures accuracy and reliability before final deployment to your engineering teams.</p>
@@ -74,7 +83,10 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">4</div>
+                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">4</div> */}
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"45px",height:"35px",borderRadius:"50%"}}>4
+
+                  </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Deployment & Support</h4>
                     <p className="text-muted-foreground">Full software ownership with 3-month warranty and compatibility with future CAD software versions.</p>

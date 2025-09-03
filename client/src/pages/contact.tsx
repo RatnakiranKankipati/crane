@@ -6,7 +6,7 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
-import { Mail, Globe, Clock, CheckCircle } from "lucide-react";
+import { Mail, Globe, Clock, CheckCircle,MapPinIcon } from "lucide-react";
 import { ContactForm } from "@shared/schema";
 
 export default function Contact() {
@@ -214,11 +214,11 @@ export default function Contact() {
                   
                   <div className="flex items-start space-x-4">
                     <div className="bg-primary/10 p-3 rounded-lg">
-                      <Clock className="w-6 h-6 text-primary" />
+                      <MapPinIcon className="w-6 h-6 text-primary" />
                     </div>
                     <div>
-                      <h4 className="font-semibold text-foreground">Response Time</h4>
-                      <p className="text-muted-foreground">Within 24 hours</p>
+                      <h4 className="font-semibold text-foreground">Address</h4>
+                      <p className="text-muted-foreground">#6-3-852/2/B/A-1, Plot No.6, 1st Floor Kaza Residency, Aparajitha Housing Colony, Ameerpet, India - 500016</p>
                     </div>
                   </div>
                 </div>
