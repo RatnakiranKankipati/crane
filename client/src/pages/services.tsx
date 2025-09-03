@@ -2,16 +2,18 @@ import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Calculator, Box, FileText, Settings, FolderCog, Wrench } from "lucide-react";
+import { TbHexagon3D } from "react-icons/tb";
+import { SiAutocad } from "react-icons/si";
 
 export default function Services() {
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Automation Services | EOT Crane Design Software | FDES Technologies"
         description="Comprehensive EOT crane design automation services including 2D AutoCAD integration, 3D modeling, IS standard calculations, and drawing generation."
         keywords="EOT crane automation services, AutoCAD integration, 3D modeling automation, IS standards calculations, drawing generation software"
       />
-      
+
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
@@ -25,19 +27,19 @@ export default function Services() {
               Custom-built software tailored to your design standards with comprehensive automation capabilities
             </p>
           </div>
-          
+
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <img 
-                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
-                  alt="CAD engineering workstation" 
+                <img
+                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+                  alt="CAD engineering workstation"
                   className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
                   data-testid="img-cad-workstation"
                 />
-                <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
-                  alt="Technical calculations and reports" 
+                <img
+                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+                  alt="Technical calculations and reports"
                   className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
                   data-testid="img-calculations"
                 />
@@ -60,7 +62,7 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-16 h-16 bg-secondary rounded-xl flex items-center justify-center shadow-lg">
@@ -72,7 +74,7 @@ export default function Services() {
                     </div>
                   </div>
                 </div>
-                
+
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
                     <div className="w-16 h-16 bg-accent rounded-xl flex items-center justify-center shadow-lg">
@@ -87,7 +89,7 @@ export default function Services() {
               </div>
             </div>
           </div>
-          
+
           {/* Technical Specifications Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
@@ -102,7 +104,7 @@ export default function Services() {
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Complete drawing automation</span></li>
               </ul>
             </div>
-            
+
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
               <div className="bg-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <Box className="w-8 h-8 text-white" />
@@ -115,7 +117,7 @@ export default function Services() {
                 <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Complete 3D modeling automation</span></li>
               </ul>
             </div>
-            
+
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
               <div className="bg-accent w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                 <Settings className="w-8 h-8 text-white" />
@@ -137,22 +139,41 @@ export default function Services() {
               Our software is designed to integrate seamlessly with the following CAD applications
             </p>
             <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-              <div className="bg-white p-8 rounded-xl shadow-lg border">
-                <h3 className="text-2xl font-bold text-primary mb-4 text-center">2D Application</h3>
+              <div className="bg-white p-4 rounded-xl shadow-lg border">
+                <div className="flex items-center justify-center gap-5 mb-2" >
+                  <SiAutocad size={38} color="#0c7ae9" />
+                  <h3 className="text-2xl font-bold text-primary mb-0 text-center">2D Application</h3>
+                </div>
                 <div className="text-center">
-                  <div className="text-6xl font-bold text-primary mb-2">AutoCAD</div>
-                  <p className="text-muted-foreground">Complete 2D drawing automation</p>
+                  {/* <div className="text-4xl font-secondary text-bold mb-2">AutoCAD</div> */}
+                  <div className="text-center p-4 bg-secondary/5 rounded-lg">
+                    <div className="text-2xl font-bold text-secondary">AutoCAD</div>
+                  </div>
+                  {/* <p className="text-muted-foreground">Complete 2D drawing automation</p> */}
+                  <p className="text-muted-foreground">Complete 2D drawing automation.
+Boost productivity with smart drafting tools.
+Seamless integration for faster project delivery. </p>
                 </div>
               </div>
-              <div className="bg-white p-8 rounded-xl shadow-lg border">
-                <h3 className="text-2xl font-bold text-secondary mb-4 text-center">3D Applications</h3>
-                <div className="space-y-4">
+              <div className="bg-white p-4 rounded-xl shadow-lg border">
+                <div className="flex items-center justify-center gap-5" >
+                  <TbHexagon3D size={50} color="#0c7ae9" />
+                  <h3 className="text-2xl font-bold text-primary mb-0 text-center">3D Applications</h3>
+                </div>
+                <div className="text-center" >
+                  {/* <div className="flex items-center justify-center" > */}
+                  {/* <TbHexagon3D size={50} color="#0c7ae9" /> */}
                   <div className="text-center p-4 bg-secondary/5 rounded-lg">
-                    <div className="text-2xl font-bold text-secondary">SolidWorks</div>
+                    <div className="text-2xl font-bold text-secondary">SolidWorks , Inventor</div>
                   </div>
-                  <div className="text-center p-4 bg-secondary/5 rounded-lg">
+                  {/* </div> */}
+
+                  {/* <div className="text-center p-4 bg-secondary/5 rounded-lg">
                     <div className="text-2xl font-bold text-secondary">Autodesk Inventor</div>
-                  </div>
+                  </div> */}
+                   <p className="text-muted-foreground">Advanced 3D design and modeling.
+Streamline product development with precision tools.
+Enhance collaboration from concept to production. </p>
                 </div>
               </div>
             </div>
@@ -192,7 +213,7 @@ export default function Services() {
             <p className="text-xl text-muted-foreground mb-8 max-w-3xl mx-auto leading-relaxed">
               Every project is unique. Our pricing is customized based on your specific requirements, complexity, and desired features. Fill out our detailed inquiry form to receive a personalized quote.
             </p>
-            
+
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="p-4 bg-primary/5 rounded-xl border border-primary/20">
                 <h4 className="font-bold text-primary mb-2">Requirements Analysis</h4>
@@ -207,13 +228,13 @@ export default function Services() {
                 <p className="text-sm text-muted-foreground">Transparent pricing</p>
               </div>
             </div>
-            
+
             <Link href="/contact">
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
                 Fill Inquiry Form for Custom Quote
               </Button>
             </Link>
-            
+
             <p className="text-sm text-muted-foreground mt-4">
               Response within 24 hours with detailed proposal
             </p>

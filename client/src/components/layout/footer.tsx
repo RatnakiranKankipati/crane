@@ -3,7 +3,7 @@ import { Mail, Globe } from "lucide-react";
 
 export function Footer() {
   return (
-    <footer className="bg-secondary text-secondary-foreground py-12">
+    <footer className="bg-secondary text-secondary-foreground py-12" style={{background:"hsl(220deg 7.16% 13.23%)"}}>
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
@@ -63,7 +63,7 @@ export function Footer() {
 
         <div className="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
           <p className="text-secondary-foreground/60">
-            © 2024 FDES Technologies Private Limited. All rights reserved.
+            © {new Date().getFullYear()} FDES Technologies Private Limited. All rights reserved.
           </p>
         </div>
       </div>

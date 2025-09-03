@@ -29,6 +29,7 @@ export function Header() {
           <Link href="/" className="flex items-center space-x-3 group">
             <div className="w-12 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
               <span className="text-white font-bold text-2xl">F</span>
+              {/* <img className="w-12 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" src="https://fdestech.com/wp-content/uploads/2024/09/fdes_logo_only_high_res.png"/> */}
             </div>
             <div>
               <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">FDES Technologies</h1>

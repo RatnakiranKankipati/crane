@@ -2,7 +2,7 @@ import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Wrench, Settings, Users } from "lucide-react";
-
+// new
 export default function About() {
   return (
     <>
@@ -141,7 +141,7 @@ export default function About() {
                 <p className="text-primary-foreground/90">Client Satisfaction</p>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">50%</div>
+                <div className="text-4xl font-bold mb-2">100%</div>
                 <p className="text-primary-foreground/90">Design Time Reduction</p>
               </div>
               <div>

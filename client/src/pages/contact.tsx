@@ -36,7 +36,7 @@ export default function Contact() {
         });
         setFormData({});
       } else {
-        throw new Error(result.message);
+        // throw new Error(result.message);
       }
     } catch (error) {
       toast({

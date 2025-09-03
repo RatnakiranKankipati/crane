@@ -69,7 +69,7 @@ export function HeroSection() {
               <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-accent/20"></div>
             </div>
             
-            <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/20">
+            <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-2xl border border-white/20">
               <div className="flex items-center space-x-4">
                 <div className="stats-gradient w-14 h-14 rounded-xl flex items-center justify-center">
                   <Zap className="w-7 h-7 text-white" />
@@ -81,7 +81,7 @@ export function HeroSection() {
               </div>
             </div>
             
-            <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/20">
+            <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg border border-white/20">
               <div className="text-center">
                 <div className="text-2xl font-bold text-primary">24hrs</div>
                 <div className="text-xs text-muted-foreground">Response Time</div>

@@ -1,0 +1,1161 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EOT Crane Design Automation | FDES Technologies | Engineering Software Solutions</title>
+    <meta name="description" content="Transform your EOT crane manufacturing with FDES Technologies' design automation software. Reduce design time from days to hours with AutoCAD & 3D modeling integration.">
+    <meta name="keywords" content="EOT crane design automation, crane manufacturing software, engineering automation, AutoCAD integration, 3D modeling, IS standards compliance, manufacturing efficiency">
+    <meta name="author" content="FDES Technologies Private Limited">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="EOT Crane Design Automation | FDES Technologies">
+    <meta property="og:description" content="Transform your EOT crane manufacturing with automated design workflows. Reduce manual efforts and enhance productivity.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://eotcranedesigner.com">
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": "FDES Technologies Private Limited",
+        "url": "https://eotcranedesigner.com",
+        "description": "Specialized engineering design automation for EOT crane manufacturers",
+        "serviceType": "Engineering Software Solutions",
+        "areaServed": "Global"
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/heroicons@2.0.18/24/outline/index.js" type="module"></script>
+    <script>
+    tailwind.config = {
+        theme: {
+            extend: {
+                borderRadius: {
+                    lg: "var(--radius)",
+                    md: "calc(var(--radius) - 2px)",
+                    sm: "calc(var(--radius) - 4px)",
+                },
+                colors: {
+                    background: "var(--background)",
+                    foreground: "var(--foreground)",
+                    card: {
+                        DEFAULT: "var(--card)",
+                        foreground: "var(--card-foreground)",
+                    },
+                    popover: {
+                        DEFAULT: "var(--popover)",
+                        foreground: "var(--popover-foreground)",
+                    },
+                    primary: {
+                        DEFAULT: "var(--primary)",
+                        foreground: "var(--primary-foreground)",
+                    },
+                    secondary: {
+                        DEFAULT: "var(--secondary)",
+                        foreground: "var(--secondary-foreground)",
+                    },
+                    muted: {
+                        DEFAULT: "var(--muted)",
+                        foreground: "var(--muted-foreground)",
+                    },
+                    accent: {
+                        DEFAULT: "var(--accent)",
+                        foreground: "var(--accent-foreground)",
+                    },
+                    destructive: {
+                        DEFAULT: "var(--destructive)",
+                        foreground: "var(--destructive-foreground)",
+                    },
+                    border: "var(--border)",
+                    input: "var(--input)",
+                    ring: "var(--ring)",
+                }
+            }
+        }
+    };
+    </script>
+    
+    <style>
+        :root {
+            --background: hsl(210 40% 98%);
+            --foreground: hsl(222.2 84% 4.9%);
+            --card: hsl(0 0% 100%);
+            --card-foreground: hsl(222.2 84% 4.9%);
+            --popover: hsl(0 0% 100%);
+            --popover-foreground: hsl(222.2 84% 4.9%);
+            --primary: hsl(214 100% 40%);
+            --primary-foreground: hsl(210 40% 98%);
+            --secondary: hsl(215 16% 47%);
+            --secondary-foreground: hsl(222.2 84% 4.9%);
+            --muted: hsl(210 40% 96%);
+            --muted-foreground: hsl(215.4 16.3% 46.9%);
+            --accent: hsl(24 95% 53%);
+            --accent-foreground: hsl(210 40% 98%);
+            --destructive: hsl(0 84% 60%);
+            --destructive-foreground: hsl(210 40% 98%);
+            --border: hsl(214.3 31.8% 91.4%);
+            --input: hsl(214.3 31.8% 91.4%);
+            --ring: hsl(214 100% 40%);
+            --radius: 0.75rem;
+            --font-sans: 'Inter', system-ui, sans-serif;
+        }
+        
+        .dark {
+            --background: hsl(222.2 84% 4.9%);
+            --foreground: hsl(210 40% 98%);
+            --card: hsl(222.2 84% 4.9%);
+            --card-foreground: hsl(210 40% 98%);
+            --popover: hsl(222.2 84% 4.9%);
+            --popover-foreground: hsl(210 40% 98%);
+            --primary: hsl(217.2 91.2% 59.8%);
+            --primary-foreground: hsl(222.2 84% 4.9%);
+            --secondary: hsl(217.2 32.6% 17.5%);
+            --secondary-foreground: hsl(210 40% 98%);
+            --muted: hsl(217.2 32.6% 17.5%);
+            --muted-foreground: hsl(215 20.2% 65.1%);
+            --accent: hsl(24 95% 53%);
+            --accent-foreground: hsl(222.2 84% 4.9%);
+            --border: hsl(217.2 32.6% 17.5%);
+            --input: hsl(217.2 32.6% 17.5%);
+            --ring: hsl(217.2 91.2% 59.8%);
+        }
+        
+        * {
+            border-color: hsl(var(--border));
+        }
+        
+        body {
+            background-color: hsl(var(--background));
+            color: hsl(var(--foreground));
+            font-family: var(--font-sans);
+        }
+        
+        .scroll-smooth {
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, hsl(var(--primary)) 0%, hsl(var(--secondary)) 100%);
+        }
+        
+        .stats-gradient {
+            background: linear-gradient(45deg, hsl(var(--accent)) 0%, hsl(var(--primary)) 100%);
+        }
+    </style>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body class="scroll-smooth">
+    <!-- @COMPONENT: Header -->
+    <!-- Header/Navigation -->
+    <header class="fixed w-full top-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+        <nav class="container mx-auto px-4 py-4">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center space-x-2">
+                    <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                        <span class="text-primary-foreground font-bold text-xl">F</span>
+                    </div>
+                    <div>
+                        <h1 class="text-xl font-bold text-foreground">FDES Technologies</h1>
+                        <p class="text-xs text-muted-foreground">EOT Crane Design Automation</p>
+                    </div>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#home" class="text-foreground hover:text-primary transition-colors">Home</a>
+                    <a href="#services" class="text-foreground hover:text-primary transition-colors">Services</a>
+                    <a href="#benefits" class="text-foreground hover:text-primary transition-colors">Benefits</a>
+                    <a href="#process" class="text-foreground hover:text-primary transition-colors">Process</a>
+                    <a href="#about" class="text-foreground hover:text-primary transition-colors">About</a>
+                    <a href="#contact" class="bg-primary text-primary-foreground px-6 py-2 rounded-lg hover:bg-primary/90 transition-colors">Contact Us</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="md:hidden p-2" data-event="click:toggleMobileMenu">
+                    <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <!-- @END_COMPONENT: Header -->
+
+    <!-- @COMPONENT: HeroSection -->
+    <!-- Hero Section -->
+    <section id="home" class="pt-24 pb-16 hero-gradient">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div class="text-primary-foreground">
+                    <h1 class="text-4xl lg:text-6xl font-bold mb-6 leading-tight">
+                        Transform Your <span class="text-accent">EOT Crane Design</span> Process
+                    </h1>
+                    <p class="text-xl mb-8 text-primary-foreground/90">
+                        Reduce design time from days to hours with our custom automation software. 
+                        Streamline calculations, 2D/3D modeling, and drawing generation for maximum efficiency.
+                    </p>
+                    <div class="flex flex-col sm:flex-row gap-4">
+                        <a href="#contact" class="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors text-center">
+                            Get Custom Quote
+                        </a>
+                        <a href="#services" class="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground hover:text-primary transition-colors text-center">
+                            Learn More
+                        </a>
+                    </div>
+                </div>
+                
+                <div class="relative">
+                    <!-- Industrial automation software interface mockup -->
+                    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Industrial automation software interface" 
+                         class="rounded-xl shadow-2xl w-full h-auto" data-mock-image="true" />
+                    
+                    <!-- Stats Overlay -->
+                    <div class="absolute -bottom-6 -left-6 bg-card p-6 rounded-xl shadow-xl border">
+                        <div class="flex items-center space-x-4">
+                            <div class="stats-gradient w-12 h-12 rounded-lg flex items-center justify-center">
+                                <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <p class="text-2xl font-bold text-foreground">90%</p>
+                                <p class="text-sm text-muted-foreground">Time Reduction</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: KeyMetrics -->
+    <!-- Key Metrics Section -->
+    <section class="py-16 bg-muted">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">3-4</div>
+                    <p class="text-muted-foreground">Months Development</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">90%</div>
+                    <p class="text-muted-foreground">Time Savings</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">100%</div>
+                    <p class="text-muted-foreground">IS Standards Compliance</p>
+                </div>
+                <div class="text-center">
+                    <div class="text-4xl font-bold text-primary mb-2">0</div>
+                    <p class="text-muted-foreground">Manual Calculation Errors</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: KeyMetrics -->
+
+    <!-- @COMPONENT: ServicesSection -->
+    <!-- Services Section -->
+    <section id="services" class="py-20">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Our Automation Solutions</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Custom-built software tailored to your design standards with comprehensive automation capabilities
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <!-- Engineering design process visualization -->
+                    <img src="https://pixabay.com/get/gc583672b79d473aff58ed7c44c7f87c59eb710224afe5253b6780a21690fac97d2616c2f25e4a2f1a5b5ec25234d476574e14d153c3f33789cfade873b296b67_1280.jpg" 
+                         alt="Engineering design process with technical drawings" 
+                         class="rounded-xl shadow-lg w-full h-auto" data-mock-image="true" />
+                </div>
+                <div>
+                    <h3 class="text-3xl font-bold text-foreground mb-6">Comprehensive Design Automation</h3>
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">Automated IS Standard Calculations</h4>
+                                <p class="text-muted-foreground">Standardized calculations eliminate manual errors and ensure compliance with IS standards for all crane components.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">AutoCAD & 3D Integration</h4>
+                                <p class="text-muted-foreground">Seamless integration with AutoCAD (2D) and Autodesk Inventor/Solidworks (3D) for complete design workflow automation.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">Automated Drawing Generation</h4>
+                                <p class="text-muted-foreground">Generate GA drawings, fabrication drawings, and BOMs automatically based on your company's specific standards.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Technical Specifications Grid -->
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">2D Automation</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• AutoCAD integration</li>
+                        <li>• 3-month development</li>
+                        <li>• Rs. 12-15 lakhs investment</li>
+                        <li>• Complete drawing automation</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">3D Automation</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• Inventor/Solidworks integration</li>
+                        <li>• 3-4 month development</li>
+                        <li>• Rs. 20-25 lakhs investment</li>
+                        <li>• Complete 3D modeling automation</li>
+                    </ul>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Full Ownership</h3>
+                    <ul class="space-y-2 text-muted-foreground">
+                        <li>• Complete software ownership</li>
+                        <li>• No installation restrictions</li>
+                        <li>• 3-month warranty included</li>
+                        <li>• Multi-workstation deployment</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: HeroSection -->
+
+    <!-- @COMPONENT: BenefitsSection -->
+    <!-- Benefits Section -->
+    <section id="benefits" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Why Choose FDES Automation?</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Experience dramatic improvements in efficiency, accuracy, and scalability
+                </p>
+            </div>
+            
+            <!-- Before/After Comparison -->
+            <div class="bg-card rounded-2xl shadow-xl border p-8 mb-16">
+                <h3 class="text-3xl font-bold text-center text-foreground mb-12">Traditional vs Automated Process</h3>
+                <div class="grid lg:grid-cols-2 gap-12">
+                    <!-- Before -->
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-destructive/10 rounded-full mb-4">
+                                <svg class="w-8 h-8 text-destructive" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4m0 4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-foreground mb-2">Traditional Method</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-destructive rounded-full"></div>
+                                <span class="text-muted-foreground">Manual calculations taking days</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-destructive rounded-full"></div>
+                                <span class="text-muted-foreground">Error-prone design process</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-destructive rounded-full"></div>
+                                <span class="text-muted-foreground">Repetitive drawing creation</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-destructive rounded-full"></div>
+                                <span class="text-muted-foreground">Inconsistent documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- After -->
+                    <div class="space-y-6">
+                        <div class="text-center">
+                            <div class="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4">
+                                <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <h4 class="text-2xl font-bold text-foreground mb-2">FDES Automation</h4>
+                        </div>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-muted-foreground">Calculations completed in hours</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-muted-foreground">Zero calculation errors</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-muted-foreground">Automated drawing generation</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <div class="w-2 h-2 bg-primary rounded-full"></div>
+                                <span class="text-muted-foreground">Standardized documentation</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Benefits Grid -->
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-accent/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-8c1.11 0 2.08.402 2.599 1M12 8V7m0 1v8m0 0v1m0-1c-1.11 0-2.08-.402-2.599-1"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Time & Cost Savings</h3>
+                    <p class="text-muted-foreground mb-4">Reduce design time from days to hours while minimizing engineering effort through intelligent automation.</p>
+                    <div class="bg-muted p-4 rounded-lg">
+                        <p class="text-sm font-semibold text-foreground">ROI: 300-500% within first year</p>
+                    </div>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Error Reduction</h3>
+                    <p class="text-muted-foreground mb-4">Standardized calculations eliminate manual errors and ensure 100% compliance with IS standards.</p>
+                    <div class="bg-muted p-4 rounded-lg">
+                        <p class="text-sm font-semibold text-foreground">Zero calculation errors guaranteed</p>
+                    </div>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border">
+                    <div class="bg-secondary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6">
+                        <svg class="w-8 h-8 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Scalability</h3>
+                    <p class="text-muted-foreground mb-4">User-friendly interface enables quick adoption across multiple workstations and engineering teams.</p>
+                    <div class="bg-muted p-4 rounded-lg">
+                        <p class="text-sm font-semibold text-foreground">Unlimited workstation deployment</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: BenefitsSection -->
+
+    <!-- @COMPONENT: ProcessSection -->
+    <!-- Development Process Section -->
+    <section id="process" class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Our Development Process</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    A proven methodology to deliver customized automation solutions tailored to your specific requirements
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center mb-16">
+                <div>
+                    <!-- Manufacturing facility with engineers -->
+                    <img src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Manufacturing facility with engineers collaborating" 
+                         class="rounded-xl shadow-lg w-full h-auto" data-mock-image="true" />
+                </div>
+                <div>
+                    <div class="space-y-8">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">1</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground mb-2">Requirement Gathering</h4>
+                                <p class="text-muted-foreground">We analyze your calculation reports, drawing standards, and specific company requirements to understand your workflow.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">2</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground mb-2">Custom Development</h4>
+                                <p class="text-muted-foreground">Our team develops tailored logic and templates that match your exact design standards and calculation methods.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">3</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground mb-2">Testing & Validation</h4>
+                                <p class="text-muted-foreground">Comprehensive testing ensures accuracy and reliability before final deployment to your engineering teams.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">4</div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground mb-2">Deployment & Support</h4>
+                                <p class="text-muted-foreground">Full software ownership with 3-month warranty and compatibility with future CAD software versions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Timeline Visualization -->
+            <div class="bg-card rounded-2xl shadow-xl border p-8">
+                <h3 class="text-3xl font-bold text-center text-foreground mb-12">Project Timeline</h3>
+                <div class="grid md:grid-cols-2 gap-12">
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-primary">2D Software Development</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Development Duration</span>
+                                <span class="text-primary font-bold">~3 months</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Investment Range</span>
+                                <span class="text-primary font-bold">Rs. 12-15 lakhs</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Platform</span>
+                                <span class="text-primary font-bold">AutoCAD Integration</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="space-y-6">
+                        <h4 class="text-2xl font-bold text-primary">3D Software Development</h4>
+                        <div class="space-y-4">
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Development Duration</span>
+                                <span class="text-primary font-bold">~3-4 months</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Investment Range</span>
+                                <span class="text-primary font-bold">Rs. 20-25 lakhs</span>
+                            </div>
+                            <div class="flex justify-between items-center p-4 bg-muted rounded-lg">
+                                <span class="font-semibold text-foreground">Platform</span>
+                                <span class="text-primary font-bold">Inventor/Solidworks</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: ProcessSection -->
+
+    <!-- @COMPONENT: AboutSection -->
+    <!-- About FDES Section -->
+    <section id="about" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <h2 class="text-4xl font-bold text-foreground mb-6">About FDES Technologies</h2>
+                    <p class="text-xl text-muted-foreground mb-8">
+                        We are specialists in engineering design automation, offering tailored software solutions 
+                        specifically for EOT crane manufacturers across the globe.
+                    </p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19.428 15.428a2 2 0 00-1.022-.547l-2.387-.477a6 6 0 00-3.86.517l-.318.158a6 6 0 01-3.86.517L6.05 15.21a2 2 0 00-1.806.547M8 4h8l-1 1v5.172a2 2 0 00.586 1.414l5 5c1.26 1.26.367 3.414-1.415 3.414H4.828c-1.782 0-2.674-2.154-1.414-3.414l5-5A2 2 0 009 10.172V5L8 4z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">Engineering Expertise</h4>
+                                <p class="text-muted-foreground">Deep understanding of EOT crane design principles and IS standards compliance requirements.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10.325 4.317c.426-1.756 2.924-1.756 3.35 0a1.724 1.724 0 002.573 1.066c1.543-.94 3.31.826 2.37 2.37a1.724 1.724 0 001.065 2.572c1.756.426 1.756 2.924 0 3.35a1.724 1.724 0 00-1.066 2.573c.94 1.543-.826 3.31-2.37 2.37a1.724 1.724 0 00-2.572 1.065c-.426 1.756-2.924 1.756-3.35 0a1.724 1.724 0 00-2.573-1.066c-1.543.94-3.31-.826-2.37-2.37a1.724 1.724 0 00-1.065-2.572c-1.756-.426-1.756-2.924 0-3.35a1.724 1.724 0 001.066-2.573c-.94-1.543.826-3.31 2.37-2.37.996.608 2.296.07 2.572-1.065z"></path>
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 12a3 3 0 11-6 0 3 3 0 016 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">Custom Solutions</h4>
+                                <p class="text-muted-foreground">Every software solution is built from scratch to match your specific design workflows and company standards.</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start space-x-4">
+                            <div class="bg-primary/10 p-3 rounded-lg">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 20h5v-2a3 3 0 00-5.356-1.857M17 20H7m10 0v-2c0-.656-.126-1.283-.356-1.857M7 20H2v-2a3 3 0 015.356-1.857M7 20v-2c0-.656.126-1.283.356-1.857m0 0a5.002 5.002 0 019.288 0M15 7a3 3 0 11-6 0 3 3 0 016 0zm6 3a2 2 0 11-4 0 2 2 0 014 0zM7 10a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-semibold text-foreground mb-2">Ongoing Support</h4>
+                                <p class="text-muted-foreground">3-month warranty period with guaranteed compatibility for future CAD software versions.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <!-- Modern engineering office with technical equipment -->
+                    <img src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="Modern engineering office with CAD workstations" 
+                         class="rounded-xl shadow-lg w-full h-auto" data-mock-image="true" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- @COMPONENT: FeaturesSection -->
+    <!-- Detailed Features Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Complete Automation Features</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Comprehensive tools designed specifically for EOT crane manufacturers
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-3 gap-8">
+                <!-- Feature Cards -->
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 7h6m0 10v-3m-3 3h.01M9 17h.01M9 14h.01M12 14h.01M15 11h.01M12 11h.01M9 11h.01M7 21h10a2 2 0 002-2V5a2 2 0 00-2-2H7a2 2 0 00-2 2v14a2 2 0 002 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">IS Standard Calculations</h3>
+                    <p class="text-muted-foreground">Automated calculations following Indian Standards with comprehensive reports for all crane components and structural elements.</p>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">CAD Integration</h3>
+                    <p class="text-muted-foreground">Seamless integration with AutoCAD, Autodesk Inventor, and Solidworks for complete 2D and 3D design automation.</p>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Drawing Generation</h3>
+                    <p class="text-muted-foreground">Automatic generation of GA drawings, fabrication drawings, and BOMs based on your specific company templates.</p>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 100 4m0-4v2m0-6V4"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Customization Options</h3>
+                    <p class="text-muted-foreground">Flexible software architecture allows complete customization based on your specific design standards and workflows.</p>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">Complete Ownership</h3>
+                    <p class="text-muted-foreground">Full software ownership with no restrictions on installations or usage across your organization.</p>
+                </div>
+                
+                <div class="bg-card p-8 rounded-xl shadow-lg border group hover:shadow-2xl transition-shadow">
+                    <div class="bg-primary/10 w-16 h-16 rounded-lg flex items-center justify-center mb-6 group-hover:bg-primary/20 transition-colors">
+                        <svg class="w-8 h-8 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0zm-5 0a4 4 0 11-8 0 4 4 0 018 0z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-2xl font-bold text-foreground mb-4">User-Friendly Interface</h3>
+                    <p class="text-muted-foreground">Intuitive interface design ensures quick adoption by your engineering teams with minimal training required.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: AboutSection -->
+
+    <!-- @COMPONENT: TestimonialsSection -->
+    <!-- Industry Impact Section -->
+    <section class="py-20 bg-muted">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Transforming the Crane Industry</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    See how our automation solutions are revolutionizing EOT crane manufacturing workflows
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-center">
+                <div>
+                    <!-- EOT crane manufacturing facility -->
+                    <img src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                         alt="EOT crane manufacturing facility with overhead cranes" 
+                         class="rounded-xl shadow-lg w-full h-auto" data-mock-image="true" />
+                </div>
+                
+                <div class="space-y-8">
+                    <div class="bg-card p-6 rounded-xl shadow-lg border">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 10V3L4 14h7v7l9-11h-7z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground">Design Efficiency</h4>
+                                <p class="text-muted-foreground">Optimize design workflows and reduce manual efforts significantly</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card p-6 rounded-xl shadow-lg border">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-accent/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-accent" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 7h8m0 0v8m0-8l-8 8-4-4-6 6"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground">Enhanced Productivity</h4>
+                                <p class="text-muted-foreground">Deliver projects faster with automated calculation and drawing generation</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bg-card p-6 rounded-xl shadow-lg border">
+                        <div class="flex items-center space-x-4 mb-4">
+                            <div class="w-12 h-12 bg-secondary/10 rounded-full flex items-center justify-center">
+                                <svg class="w-6 h-6 text-secondary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z"></path>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4 class="text-xl font-bold text-foreground">Quality Assurance</h4>
+                                <p class="text-muted-foreground">Ensure consistent quality and compliance with industry standards</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- @COMPONENT: ContactSection -->
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Ready to Transform Your Design Process?</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Contact us for a customized solution tailored to your EOT crane manufacturing requirements
+                </p>
+            </div>
+            
+            <div class="grid lg:grid-cols-2 gap-12 items-start">
+                <!-- Contact Form -->
+                <div class="bg-card p-8 rounded-xl shadow-xl border">
+                    <h3 class="text-2xl font-bold text-foreground mb-6">Get Your Custom Quote</h3>
+                    <form class="space-y-6" data-implementation="Implement form submission to sales@fdestech.com">
+                        <div class="grid md:grid-cols-2 gap-4">
+                            <div>
+                                <label for="firstName" class="block text-sm font-medium text-foreground mb-2">First Name</label>
+                                <input type="text" id="firstName" name="firstName" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="Enter your first name" required data-mock="true">
+                            </div>
+                            <div>
+                                <label for="lastName" class="block text-sm font-medium text-foreground mb-2">Last Name</label>
+                                <input type="text" id="lastName" name="lastName" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="Enter your last name" required data-mock="true">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label for="email" class="block text-sm font-medium text-foreground mb-2">Email Address</label>
+                            <input type="email" id="email" name="email" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="your.email@company.com" required data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label for="company" class="block text-sm font-medium text-foreground mb-2">Company Name</label>
+                            <input type="text" id="company" name="company" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="Your crane manufacturing company" required data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label for="phone" class="block text-sm font-medium text-foreground mb-2">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="+91 XXXXX XXXXX" data-mock="true">
+                        </div>
+                        
+                        <div>
+                            <label for="projectType" class="block text-sm font-medium text-foreground mb-2">Project Type</label>
+                            <select id="projectType" name="projectType" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" required data-mock="true">
+                                <option value="">Select project type</option>
+                                <option value="2d-automation">2D AutoCAD Automation</option>
+                                <option value="3d-automation">3D Modeling Automation</option>
+                                <option value="both">Both 2D & 3D Solutions</option>
+                                <option value="consultation">Consultation Only</option>
+                            </select>
+                        </div>
+                        
+                        <div>
+                            <label for="requirements" class="block text-sm font-medium text-foreground mb-2">Project Requirements</label>
+                            <textarea id="requirements" name="requirements" rows="4" class="w-full px-4 py-3 bg-input border border-border rounded-lg focus:ring-2 focus:ring-ring focus:border-transparent transition-colors" placeholder="Describe your current design process, specific requirements, and any existing standards..." data-mock="true"></textarea>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-primary text-primary-foreground py-4 px-6 rounded-lg font-semibold hover:bg-primary/90 transition-colors" data-event="click:handleFormSubmit" data-implementation="Validate form and send to sales@fdestech.com">
+                            Send Project Inquiry
+                        </button>
+                        
+                        <p class="text-sm text-muted-foreground text-center">
+                            We'll respond within 24 hours with a detailed proposal tailored to your needs.
+                        </p>
+                    </form>
+                </div>
+                
+                <!-- Contact Information -->
+                <div class="space-y-8">
+                    <div class="bg-card p-8 rounded-xl shadow-lg border">
+                        <h3 class="text-2xl font-bold text-foreground mb-6">Get in Touch</h3>
+                        <div class="space-y-6">
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-primary/10 p-3 rounded-lg">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 4.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-foreground">Email</h4>
+                                    <p class="text-muted-foreground">sales@fdestech.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-primary/10 p-3 rounded-lg">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-foreground">Website</h4>
+                                    <p class="text-muted-foreground">www.fdestech.com</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start space-x-4">
+                                <div class="bg-primary/10 p-3 rounded-lg">
+                                    <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 class="font-semibold text-foreground">Response Time</h4>
+                                    <p class="text-muted-foreground">Within 24 hours</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Why Choose Us -->
+                    <div class="bg-card p-8 rounded-xl shadow-lg border">
+                        <h3 class="text-2xl font-bold text-foreground mb-6">Why Choose FDES?</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-muted-foreground">Specialized in EOT crane automation</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-muted-foreground">Complete software ownership</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-muted-foreground">3-month warranty included</span>
+                            </div>
+                            <div class="flex items-center space-x-3">
+                                <svg class="w-5 h-5 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 13l4 4L19 7"></path>
+                                </svg>
+                                <span class="text-muted-foreground">Future version compatibility</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: TestimonialsSection -->
+
+    <!-- @COMPONENT: FAQSection -->
+    <!-- FAQ Section -->
+    <section class="py-20 bg-background">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-foreground mb-4">Frequently Asked Questions</h2>
+                <p class="text-xl text-muted-foreground max-w-3xl mx-auto">
+                    Common questions about our EOT crane design automation solutions
+                </p>
+            </div>
+            
+            <div class="max-w-4xl mx-auto space-y-6">
+                <div class="bg-card p-6 rounded-xl shadow-lg border">
+                    <button class="w-full text-left flex items-center justify-between" data-event="click:toggleFAQ">
+                        <h3 class="text-xl font-bold text-foreground">What crane types are supported by your automation software?</h3>
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-muted-foreground">
+                        Our software supports all types of EOT (Electric Overhead Traveling) cranes including single girder, double girder, and gantry cranes with various lifting capacities and spans.
+                    </div>
+                </div>
+                
+                <div class="bg-card p-6 rounded-xl shadow-lg border">
+                    <button class="w-full text-left flex items-center justify-between" data-event="click:toggleFAQ">
+                        <h3 class="text-xl font-bold text-foreground">How does the customization process work?</h3>
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-muted-foreground">
+                        We begin with detailed requirement gathering to understand your calculation methods, drawing standards, and company-specific workflows. The software is then built from scratch to match your exact specifications.
+                    </div>
+                </div>
+                
+                <div class="bg-card p-6 rounded-xl shadow-lg border">
+                    <button class="w-full text-left flex items-center justify-between" data-event="click:toggleFAQ">
+                        <h3 class="text-xl font-bold text-foreground">What support is provided after deployment?</h3>
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-muted-foreground">
+                        We provide a 3-month warranty period for issue resolution and ensure compatibility with at least three future versions of your CAD software.
+                    </div>
+                </div>
+                
+                <div class="bg-card p-6 rounded-xl shadow-lg border">
+                    <button class="w-full text-left flex items-center justify-between" data-event="click:toggleFAQ">
+                        <h3 class="text-xl font-bold text-foreground">Can the software be deployed across multiple workstations?</h3>
+                        <svg class="w-6 h-6 text-primary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"></path>
+                        </svg>
+                    </button>
+                    <div class="mt-4 text-muted-foreground">
+                        Yes, since you own the software completely, there are no restrictions on installations or usage across your organization's workstations.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: FAQSection -->
+
+    <!-- @COMPONENT: CTASection -->
+    <!-- Final CTA Section -->
+    <section class="py-20 hero-gradient">
+        <div class="container mx-auto px-4 text-center">
+            <div class="max-w-4xl mx-auto">
+                <h2 class="text-4xl font-bold text-primary-foreground mb-6">
+                    Start Your Automation Journey Today
+                </h2>
+                <p class="text-xl text-primary-foreground/90 mb-8">
+                    Join the leading EOT crane manufacturers who have transformed their design processes with FDES automation solutions.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                    <a href="#contact" class="bg-accent text-accent-foreground px-8 py-4 rounded-lg font-semibold hover:bg-accent/90 transition-colors">
+                        Request Custom Proposal
+                    </a>
+                    <a href="mailto:sales@fdestech.com" class="border-2 border-primary-foreground text-primary-foreground px-8 py-4 rounded-lg font-semibold hover:bg-primary-foreground hover:text-primary transition-colors">
+                        Email Us Directly
+                    </a>
+                </div>
+                
+                <!-- Additional CTA Information -->
+                <div class="mt-12 grid md:grid-cols-3 gap-8 text-primary-foreground/90">
+                    <div>
+                        <h4 class="font-bold mb-2">Quick Response</h4>
+                        <p class="text-sm">Get detailed proposal within 24 hours</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">Custom Solutions</h4>
+                        <p class="text-sm">Tailored to your specific requirements</p>
+                    </div>
+                    <div>
+                        <h4 class="font-bold mb-2">Proven Results</h4>
+                        <p class="text-sm">90% time reduction guaranteed</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- @END_COMPONENT: CTASection -->
+
+    <!-- @COMPONENT: Footer -->
+    <!-- Footer -->
+    <footer class="bg-secondary text-secondary-foreground py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div class="md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-4">
+                        <div class="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+                            <span class="text-primary-foreground font-bold text-xl">F</span>
+                        </div>
+                        <div>
+                            <h3 class="text-xl font-bold">FDES Technologies</h3>
+                            <p class="text-sm text-secondary-foreground/70">Private Limited</p>
+                        </div>
+                    </div>
+                    <p class="text-secondary-foreground/80 mb-4 max-w-md">
+                        Specialized in engineering design automation for EOT crane manufacturers. 
+                        Transforming traditional design workflows with intelligent automation solutions.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="mailto:sales@fdestech.com" class="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors">
+                            <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                                <path d="M1.5 8.67v8.58a3 3 0 003 3h15a3 3 0 003-3V8.67l-8.928 5.493a3 3 0 01-3.144 0L1.5 8.67z" />
+                                <path d="M22.5 6.908V6.75a3 3 0 00-3-3h-15a3 3 0 00-3 3v.158l9.714 5.978a1.5 1.5 0 001.572 0L22.5 6.908z" />
+                            </svg>
+                        </a>
+                        <a href="https://www.fdestech.com" class="text-secondary-foreground/80 hover:text-secondary-foreground transition-colors">
+                            <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Services</h4>
+                    <ul class="space-y-2 text-secondary-foreground/80">
+                        <li><a href="#services" class="hover:text-secondary-foreground transition-colors">2D Automation</a></li>
+                        <li><a href="#services" class="hover:text-secondary-foreground transition-colors">3D Automation</a></li>
+                        <li><a href="#services" class="hover:text-secondary-foreground transition-colors">Custom Development</a></li>
+                        <li><a href="#services" class="hover:text-secondary-foreground transition-colors">CAD Integration</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Company</h4>
+                    <ul class="space-y-2 text-secondary-foreground/80">
+                        <li><a href="#about" class="hover:text-secondary-foreground transition-colors">About Us</a></li>
+                        <li><a href="#process" class="hover:text-secondary-foreground transition-colors">Our Process</a></li>
+                        <li><a href="#benefits" class="hover:text-secondary-foreground transition-colors">Benefits</a></li>
+                        <li><a href="#contact" class="hover:text-secondary-foreground transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-secondary-foreground/20 mt-8 pt-8 text-center">
+                <p class="text-secondary-foreground/60">
+                    © 2024 FDES Technologies Private Limited. All rights reserved. | 
+                    <a href="#" class="hover:text-secondary-foreground transition-colors">Privacy Policy</a> | 
+                    <a href="#" class="hover:text-secondary-foreground transition-colors">Terms of Service</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+    <!-- @END_COMPONENT: Footer -->
+
+    <!-- JavaScript for interactions -->
+    <script>
+        // TODO: Implement proper JavaScript for form submissions, mobile menu, FAQ toggles, and smooth scrolling
+        (function() {
+            // Mobile menu toggle
+            const mobileMenuBtn = document.querySelector('[data-event="click:toggleMobileMenu"]');
+            // FAQ toggles
+            const faqButtons = document.querySelectorAll('[data-event="click:toggleFAQ"]');
+            // Form submission
+            const contactForm = document.querySelector('form');
+            
+            // Smooth scrolling for navigation links
+            document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+                anchor.addEventListener('click', function (e) {
+                    e.preventDefault();
+                    const targetId = this.getAttribute('href').substring(1);
+                    const targetElement = document.getElementById(targetId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({
+                            behavior: 'smooth',
+                            block: 'start'
+                        });
+                    }
+                });
+            });
+            
+            // Header scroll effect
+            window.addEventListener('scroll', function() {
+                const header = document.querySelector('header');
+                if (window.scrollY > 100) {
+                    header.classList.add('bg-background/95');
+                } else {
+                    header.classList.remove('bg-background/95');
+                }
+            });
+        })();
+    </script>
+</body>
+</html>

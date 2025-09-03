@@ -1,6 +1,6 @@
 export function KeyMetricsSection() {
   const metrics = [
-    { value: "50%", label: "Design Time Reduction", icon: "⚡" },
+    { value: "100%", label: "Design Time Reduction", icon: "⚡" },
     { value: "100%", label: "IS Standards Compliance", icon: "✅" },
     { value: "0", label: "Manual Calculation Errors", icon: "🎯" },
     { value: "50+", label: "Successful Implementations", icon: "🏭" },
