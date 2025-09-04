@@ -7,6 +7,8 @@ import logo from "../../images/EOT Blue Background Logo.png"
 import logo1 from "../../images/fdes 1.png"
 
 
+
+
 export function Header() {
   const [location] = useLocation();
   const [isOpen, setIsOpen] = useState(false);
@@ -26,7 +28,7 @@ export function Header() {
   };
 
   return (
-    <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50">
+    <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50" style={{backgroundColor:"#174c80"}}>
       <nav className="container mx-auto px-4 py-1">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group" >
@@ -38,7 +40,9 @@ export function Header() {
               {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"> */}
               {/* <span className="text-white font-bold text-2xl">F</span> */}
               {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
-              <img  style={{width:"30%"}} src={logo1}/>
+              <img style={{width:"30%"}} src="https://fdestech.com/wp-content/uploads/2018/06/footerlogo_white.png"/>
+              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{color:"white"}}>Technologies Private Limited</h5>
+              {/* <p className="text-xs text-muted-foreground font-medium" style={{color:"#FAA52E"}}>Technologies Private Limited</p> */}
             {/* </div> */}
             {/* <div>
               <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">EOT Crane Design Automation</h1>
@@ -53,9 +57,10 @@ export function Header() {
                 key={item.name}
                 href={item.href}
                 className={`text-foreground hover:text-primary transition-colors ${
-                  isActive(item.href) ? "text-primary font-medium" : ""
+                  isActive(item.href) ? "text-warning font-medium" : "text-white"
                 }`}
                 data-testid={`nav-${item.name.toLowerCase()}`}
+                style={{color:isActive(item.href)?"#FAA52E":"white"}}
               >
                 {item.name}
               </Link>

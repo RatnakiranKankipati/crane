@@ -8,13 +8,20 @@ export function Footer() {
         <div className="grid md:grid-cols-4 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
+              {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
                 <span className="text-primary-foreground font-bold text-xl">F</span>
               </div>
               <div>
                 <h3 className="text-xl font-bold">FDES Technologies</h3>
                 <p className="text-sm text-secondary-foreground/70">Private Limited</p>
-              </div>
+              </div> */}
+              <img  style={{width:"20%"}} src={"https://fdestech.com/wp-content/uploads/2018/06/footerlogo_white.png"}/>
+              <div>
+                <h6 className="text-xl font-bold" style={{fontSize:"16px"}}>Technologies Private Limited</h6>
+                {/* <h5 className="text-xl font-bold">Private Limited</h5> */}
+
+                {/* <p className="text-sm text-secondary-foreground/70">Private Limited</p> */}
+              </div> 
             </div>
             <p className="text-secondary-foreground/80 mb-4 max-w-md">
               Specialized in engineering design automation for EOT crane manufacturers. 
