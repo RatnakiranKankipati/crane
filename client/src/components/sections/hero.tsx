@@ -1,12 +1,15 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
+import Heroimg from "../../images/eotcrane.png"
+import Heroimg2 from "../../images/form.png"
+
 
 export function HeroSection() {
   return (
-    <section className="py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
-      <div className="container mx-auto px-4 relative z-10">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
+    <section className="py-24 lg:py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
+      <div className="mx-8 px-4 relative z-10">
+        <div className="grid lg:grid-cols-3 gap-4 items-center">
           <div className="text-white space-y-8">
             <div className="space-y-6">
               <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
@@ -60,13 +63,25 @@ export function HeroSection() {
           
           <div className="relative">
             <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
-              <img 
-                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+            {/* <div className="relative"> */}
+            {/* <div className="relative" style={{display:"flex",flexDirection:"column",gap:"50px"}}> */}
+
+              {/* <img 
+             
+                src={Heroimg} 
+                // style={{width:"30%"}}
                 alt="EOT crane in modern manufacturing facility" 
-                className="rounded-2xl shadow-2xl w-full h-auto border-4 border-white/20"
+                className="rounded-2xl w-full shadow-2xl h-auto border-white/20"
+                data-testid="img-hero"
+              /> */}
+               <img 
+                src={Heroimg} 
+                // style={{width:"30%"}}
+                alt="EOT crane in modern manufacturing facility" 
+                className="rounded-2xl w-full shadow-2xl h-auto border-white/20"
                 data-testid="img-hero"
               />
-              <div className="absolute inset-0 rounded-2xl bg-gradient-to-tr from-primary/20 to-accent/20"></div>
+              
             </div>
             
             <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-2xl border border-white/20">
@@ -80,6 +95,39 @@ export function HeroSection() {
                 </div>
               </div>
             </div>
+            
+            {/* <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg border border-white/20">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">24hrs</div>
+                <div className="text-xs text-muted-foreground">Response Time</div>
+              </div>
+            </div> */}
+          </div>
+          <div className="relative">
+            <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
+            {/* <div className="relative"> */}
+              <img 
+                src={Heroimg2} 
+                // style={{width:"30%"}}
+                alt="EOT crane in modern manufacturing facility" 
+                className="rounded-2xl w-full shadow-2xl h-auto border-white/20"
+                data-testid="img-hero"
+              />
+              
+              
+            </div>
+            
+            {/* <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm p-3 rounded-2xl shadow-2xl border border-white/20">
+              <div className="flex items-center space-x-4">
+                <div className="stats-gradient w-14 h-14 rounded-xl flex items-center justify-center">
+                  <Zap className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-foreground" data-testid="text-time-reduction">90%</p>
+                  <p className="text-sm text-muted-foreground font-medium">Time Reduction</p>
+                </div>
+              </div>
+            </div> */}
             
             <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm p-2 rounded-xl shadow-lg border border-white/20">
               <div className="text-center">
