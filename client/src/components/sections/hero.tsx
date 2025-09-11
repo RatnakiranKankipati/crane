@@ -3,14 +3,15 @@ import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import Heroimg from "../../images/eotcrane.png"
 import eot from "../../images/eot3.png"
-import Heroimg2 from "../../images/image (1) (1).png"
+import Heroimg2 from "../../images/updated image.png"
 
 
 export function HeroSection() {
   return (
-    <section className="py-24 lg:py-16 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
-      <div className="mx-8 px-4 relative z-10">
-          <div className="grid lg:grid-cols-2 items-center" >
+ <section className="py-24 lg:py-32 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
+      <div className="container mx-auto px-4 relative z-10">
+          {/* <div className="grid lg:grid-cols-2 items-center" > */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="text-white space-y-8">
               <div className="space-y-6">
                 <div className="inline-flex items-center bg-white/10 backdrop-blur-sm px-4 py-2 rounded-full border border-white/20">
