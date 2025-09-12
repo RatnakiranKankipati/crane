@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import Heroimg from "../../images/eotcrane.png"
 import eot from "../../images/eot3.png"
-import Heroimg2 from "../../images/Screenshot 2025-09-12 105107 calculations.png"
+import Heroimg2 from "../../images/updated image.png"
 
 
 export function HeroSection() {
