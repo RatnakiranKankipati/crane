@@ -2,6 +2,7 @@ import { Calculator, Box, FileText, Settings, Shield, Users } from "lucide-react
 import calculations from "../../images/Screenshot 2025-09-12 105107 calculations.png"
 import autocad from "../../images/autocad.png"
 import drawing from "../../images/Screenshot 2025-09-12 104822 drawing.png"
+import customization from "../../images/ai-in-crane-1024x538.jpg"
 
 export function FeaturesSection() {
   const features = [
@@ -21,7 +22,7 @@ export function FeaturesSection() {
       description: "The software can produce a variety of drawings including General Arrangement (GA) drawings, fabrication drawings, and detailed part drawings. These outputs are crucial for different stages of the manufacturing process and are generated automatically based on your company standards."
     },
     {
-      image: "https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: customization,
       title: "Customization Options",
       description: "We understand that every crane design process is unique. Our solution is highly customizable to match your specific design standards and operational requirements. We work closely with your team to gather the necessary inputs, ensuring seamless integration into your existing workflows."
     },

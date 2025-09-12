@@ -1,6 +1,8 @@
 import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
+import process from "../images/process.jpg"
+
 
 export default function Process() {
   return (
@@ -24,7 +26,7 @@ export default function Process() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  src={process} 
                   alt="Manufacturing facility with engineers collaborating" 
                   className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
                   data-testid="img-manufacturing"

@@ -1,4 +1,10 @@
 import { Zap, TrendingUp, Shield } from "lucide-react";
+import crane1 from "../../images/crane2.jpg";
+import crane2 from "../../images/Crane-Hook-768x576 (1).jpg";
+import crane3 from "../../images/crane1.jpg";
+import crane4 from "../../images/cranetrolley.jpg";
+
+
 
 export function IndustryImpactSection() {
   return (
@@ -20,25 +26,26 @@ export function IndustryImpactSection() {
           <div className="relative">
             <div className="grid grid-cols-2 gap-4">
               <img 
-                src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+              src={crane2}
+                
                 alt="EOT crane in manufacturing facility" 
                 className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 data-testid="img-facility-1"
               />
               <img 
-                src="https://images.unsplash.com/photo-1581092334651-ddf26d9a09d0?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                src={crane1} 
                 alt="Industrial manufacturing process" 
                 className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
                 data-testid="img-facility-2"
               />
               <img 
-                src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                src={crane3} 
                 alt="Engineering CAD workstation" 
                 className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 -mt-8"
                 data-testid="img-facility-3"
               />
               <img 
-                src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                src={crane4} 
                 alt="Technical drawings and calculations" 
                 className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
                 data-testid="img-facility-4"

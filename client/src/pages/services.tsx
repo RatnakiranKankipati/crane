@@ -4,6 +4,8 @@ import { Button } from "@/components/ui/button";
 import { Calculator, Box, FileText, Settings, FolderCog, Wrench } from "lucide-react";
 import { TbHexagon3D } from "react-icons/tb";
 import { SiAutocad } from "react-icons/si";
+import service1 from "../images/eotcraneresize.jpg"
+import service2 from "../images/image (5).jpg"
 
 export default function Services() {
   return (
@@ -32,13 +34,13 @@ export default function Services() {
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
                 <img
-                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+                  src={service1}
                   alt="CAD engineering workstation"
                   className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
                   data-testid="img-cad-workstation"
                 />
                 <img
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300"
+                  src={service2}
                   alt="Technical calculations and reports"
                   className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
                   data-testid="img-calculations"
