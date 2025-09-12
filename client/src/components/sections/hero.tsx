@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import Heroimg from "../../images/eotcrane.png"
 import eot from "../../images/eot3.png"
-import Heroimg2 from "../../images/updated image.png"
+import Heroimg2 from "../../images/Screenshot 2025-09-12 105107 calculations.png"
 
 
 export function HeroSection() {
@@ -72,7 +72,7 @@ export function HeroSection() {
 
                 <img
 
-                  src={"https://fdestech.com/wp-content/uploads/2018/06/AutoCAD-Plugin.png"}
+                  src={Heroimg2}
 
                   alt="EOT crane in modern manufacturing facility"
                   className="rounded-2xl shadow-2xl w-full h-auto border-white/20"
