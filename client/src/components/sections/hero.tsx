@@ -66,7 +66,9 @@ export function HeroSection() {
             <div className="relative">
               {/* <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500"> */}
               <div className="relative" >
+            <div className="relative transform rotate-3 hover:rotate-0 transition-transform duration-500">
 
+              
 
                 <img
 
@@ -76,14 +78,8 @@ export function HeroSection() {
                   className="rounded-2xl shadow-2xl w-full h-auto border-white/20"
                   data-testid="img-hero"
                 />
-                {/* <img 
-                src={Heroimg2} 
-                style={{width:"300px"}}
-               
-                alt="EOT crane in modern manufacturing facility" 
-                className="rounded-2xl w-full h-auto shadow-2xl  border-white/20"
-                data-testid="img-hero"
-              /> */}
+                
+                </div>
 
               </div>
 
@@ -125,6 +121,24 @@ export function HeroSection() {
               />
           
             </div> */}
+             <div className="absolute -bottom-8 -left-8 bg-white/95 backdrop-blur-sm p-6 rounded-2xl shadow-2xl border border-white/20">
+              <div className="flex items-center space-x-4">
+                <div className="stats-gradient w-14 h-14 rounded-xl flex items-center justify-center">
+                  <Zap className="w-7 h-7 text-white" />
+                </div>
+                <div>
+                  <p className="text-3xl font-bold text-foreground" data-testid="text-time-reduction">90%</p>
+                  <p className="text-sm text-muted-foreground font-medium">Time Reduction</p>
+                </div>
+              </div>
+            </div>
+            
+            <div className="absolute -top-4 -right-4 bg-white/95 backdrop-blur-sm p-4 rounded-xl shadow-lg border border-white/20">
+              <div className="text-center">
+                <div className="text-2xl font-bold text-primary">24hrs</div>
+                <div className="text-xs text-muted-foreground">Response Time</div>
+              </div>
+            </div>
             </div>
              
 

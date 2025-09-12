@@ -1,19 +1,22 @@
 import { Calculator, Box, FileText, Settings, Shield, Users } from "lucide-react";
+import calculations from "../../images/Screenshot 2025-09-12 105107 calculations.png"
+import autocad from "../../images/autocad.png"
+import drawing from "../../images/Screenshot 2025-09-12 104822 drawing.png"
 
 export function FeaturesSection() {
   const features = [
     {
-      image: "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: calculations,
       title: "IS Standard Calculations",
       description: "Built to comply with IS 3177, IS 807, and IS 800, our software guarantees that every design meets the required safety and legal standards, ensuring smooth approvals and reducing the risk of costly errors during manufacturing."
     },
     {
-      image: "https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: autocad,
       title: "CAD Integration",
       description: "Seamless integration with AutoCAD, Autodesk Inventor, and Solidworks for complete 2D and 3D design automation."
     },
     {
-      image: "https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: drawing,
       title: "Drawing Generation",
       description: "The software can produce a variety of drawings including General Arrangement (GA) drawings, fabrication drawings, and detailed part drawings. These outputs are crucial for different stages of the manufacturing process and are generated automatically based on your company standards."
     },
