@@ -53,7 +53,7 @@ export function HeroSection() {
                   <div className="text-sm text-gray-300">Months Development</div>
                 </div>
                 <div className="text-center">
-                  <div className="text-3xl font-bold text-accent">90%</div>
+                  <div className="text-3xl font-bold text-accent">85%</div>
                   <div className="text-sm text-gray-300">Time Savings</div>
                 </div>
                 <div className="text-center">
@@ -127,7 +127,7 @@ export function HeroSection() {
                   <Zap className="w-7 h-7 text-white" />
                 </div>
                 <div>
-                  <p className="text-3xl font-bold text-foreground" data-testid="text-time-reduction">90%</p>
+                  <p className="text-3xl font-bold text-foreground" data-testid="text-time-reduction">85%</p>
                   <p className="text-sm text-muted-foreground font-medium">Time Reduction</p>
                 </div>
               </div>

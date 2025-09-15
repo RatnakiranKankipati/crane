@@ -49,7 +49,7 @@ export function CTASection() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
               <h4 className="text-xl font-bold mb-3" data-testid="cta-feature-3">🏆 Proven Results</h4>
-              <p className="text-base leading-relaxed">90% time reduction guaranteed</p>
+              <p className="text-base leading-relaxed">85% time reduction  guaranteed</p>
             </div>
           </div>
         </div>

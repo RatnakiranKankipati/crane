@@ -141,7 +141,7 @@ export default function About() {
                 <p className="text-primary-foreground/90">Client Satisfaction</p>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">100%</div>
+                <div className="text-4xl font-bold mb-2">85%</div>
                 <p className="text-primary-foreground/90">Design Time Reduction</p>
               </div>
               <div>
