@@ -2,6 +2,7 @@ import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Wrench, Settings, Users } from "lucide-react";
+import about from "../images/About.png"
 // new
 export default function About() {
   return (
@@ -66,7 +67,7 @@ export default function About() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&h=600" 
+                  src={about} 
                   alt="Modern engineering office with CAD workstations" 
                   className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
                   data-testid="img-office"

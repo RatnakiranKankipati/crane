@@ -1,8 +1,11 @@
 import { Calculator, Box, FileText, Settings, Shield, Users } from "lucide-react";
-import calculations from "../../images/Screenshot 2025-09-12 105107 calculations.png"
+import calculations from "../../images/cal13.png"
 import autocad from "../../images/autocad.png"
 import drawing from "../../images/Screenshot 2025-09-12 104822 drawing.png"
-import customization from "../../images/ai-in-crane-1024x538.jpg"
+import customization from "../../images/Customization Options9.png"
+import completeownership from "../../images/Complete Ownership.png"
+import user from "../../images/Userfriendly Interface.png"
+
 
 export function FeaturesSection() {
   const features = [
@@ -27,12 +30,12 @@ export function FeaturesSection() {
       description: "We understand that every crane design process is unique. Our solution is highly customizable to match your specific design standards and operational requirements. We work closely with your team to gather the necessary inputs, ensuring seamless integration into your existing workflows."
     },
     {
-      image: "https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: completeownership,
       title: "Complete Ownership",
       description: "Full software ownership with no restrictions on installations or usage across your organization."
     },
     {
-      image: "https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300",
+      image: user,
       title: "User-Friendly Interface",
       description: "Intuitive interface design ensures quick adoption by your engineering teams with minimal training required."
     }
