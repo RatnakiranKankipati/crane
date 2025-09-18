@@ -1,7 +1,7 @@
 import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import process from "../images/process.jpg"
+import process from "../images/softwareprcess.png"
 
 
 export default function Process() {

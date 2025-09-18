@@ -4,8 +4,11 @@ import { Button } from "@/components/ui/button";
 import { Calculator, Box, FileText, Settings, FolderCog, Wrench } from "lucide-react";
 import { TbHexagon3D } from "react-icons/tb";
 import { SiAutocad } from "react-icons/si";
-import service1 from "../images/eotcraneresize.jpg"
-import service2 from "../images/image (5).jpg"
+import service1 from "../images/service1.png"
+import service2 from "../images/service2.png"
+import service3 from "../images/eotcraneresize.jpg"
+import service4 from "../images/image (5).jpg"
+
 
 export default function Services() {
   return (
@@ -33,18 +36,35 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div className="relative">
               <div className="grid grid-cols-2 gap-4">
-                <img
-                  src={service1}
-                  alt="CAD engineering workstation"
-                  className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
-                  data-testid="img-cad-workstation"
-                />
-                <img
-                  src={service2}
-                  alt="Technical calculations and reports"
-                  className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-8"
-                  data-testid="img-calculations"
-                />
+                <div>
+                  <img
+                    src={service1}
+                    alt="CAD engineering workstation"
+                    className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                    data-testid="img-cad-workstation"
+                  />
+                  <img
+                    src={service4}
+                    alt="Technical calculations and reports"
+                    className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-4"
+                    data-testid="img-calculations"
+                  />
+                </div>
+                <div>
+                  <img
+                    src={service3}
+                    alt="CAD engineering workstation"
+                    className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300"
+                    data-testid="img-cad-workstation"
+                  />
+                  <img
+                    src={service2}
+                    alt="Technical calculations and reports"
+                    className="rounded-xl shadow-lg w-full h-auto transform hover:scale-105 transition-transform duration-300 mt-4"
+                    data-testid="img-calculations"
+                  />
+                </div>
+
               </div>
               <div className="absolute inset-0 bg-gradient-to-tr from-primary/10 to-accent/10 rounded-xl"></div>
             </div>
@@ -153,8 +173,8 @@ export default function Services() {
                   </div>
                   {/* <p className="text-muted-foreground">Complete 2D drawing automation</p> */}
                   <p className="text-muted-foreground">Complete 2D drawing automation.
-Boost productivity with smart drafting tools.
-Seamless integration for faster project delivery. </p>
+                    Boost productivity with smart drafting tools.
+                    Seamless integration for faster project delivery. </p>
                 </div>
               </div>
               <div className="bg-white p-4 rounded-xl shadow-lg border">
@@ -173,9 +193,9 @@ Seamless integration for faster project delivery. </p>
                   {/* <div className="text-center p-4 bg-secondary/5 rounded-lg">
                     <div className="text-2xl font-bold text-secondary">Autodesk Inventor</div>
                   </div> */}
-                   <p className="text-muted-foreground">Advanced 3D design and modeling.
-Streamline product development with precision tools.
-Enhance collaboration from concept to production. </p>
+                  <p className="text-muted-foreground">Advanced 3D design and modeling.
+                    Streamline product development with precision tools.
+                    Enhance collaboration from concept to production. </p>
                 </div>
               </div>
             </div>

@@ -2,6 +2,10 @@ import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { DollarSign, CheckCircle, TrendingUp, AlertCircle } from "lucide-react";
+import timeandcosting from '../images/timecost.png'
+import errorreduction from '../images/error.png'
+import scalebility from '../images/scaeblity.png'
+
 
 export default function Benefits() {
   return (
@@ -112,7 +116,7 @@ export default function Benefits() {
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  src={timeandcosting} 
                   alt="Financial calculations and cost savings" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -135,7 +139,7 @@ export default function Benefits() {
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1581092921461-eab62e97a780?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  src={errorreduction} 
                   alt="Quality control and engineering precision" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
@@ -158,7 +162,7 @@ export default function Benefits() {
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
                 <img 
-                  src="https://images.unsplash.com/photo-1565793298595-6a879b1d9492?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&h=300" 
+                  src={scalebility} 
                   alt="Scalable manufacturing operations" 
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />

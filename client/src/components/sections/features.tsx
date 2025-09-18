@@ -2,7 +2,7 @@ import { Calculator, Box, FileText, Settings, Shield, Users } from "lucide-react
 import calculations from "../../images/cal13.png"
 import autocad from "../../images/autocad.png"
 import drawing from "../../images/Screenshot 2025-09-12 104822 drawing.png"
-import customization from "../../images/Customization Options9.png"
+import customization from "../../images/custom.jpeg"
 import completeownership from "../../images/Complete Ownership.png"
 import user from "../../images/Userfriendly Interface.png"
 
