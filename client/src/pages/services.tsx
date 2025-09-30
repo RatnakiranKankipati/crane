@@ -115,8 +115,12 @@ export default function Services() {
            {/* New Feature Cards */}
         
 
-          
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+          <div className="bg-white-50 p-12 rounded-2xl">
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">The Core Components of Crane Genie</h2>
+            <p className="text-xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
+              From core calculations and CAD integration to complete source code ownership, every feature of Crane Genie is designed to deliver maximum efficiency, reliability, and value to your business.
+            </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
               <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
                <Repeat className="w-8 h-8 text-white" />
@@ -144,6 +148,8 @@ export default function Services() {
               
             </div>
           </div>
+          </div>
+
           
 
           {/* CAD Software Integration */}
