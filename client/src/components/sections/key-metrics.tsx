@@ -1,9 +1,12 @@
+import { Shuffle, Layout, Zap, Repeat, ArrowRight } from "lucide-react";
+
+
 export function KeyMetricsSection() {
   const metrics = [
-    { value: "85%", label: "Design Time Reduction", icon: "⚡" },
-    { value: "100%", label: "IS Standards Compliance", icon: "✅" },
+    { value: "100%", label: "Customizable Workflows", icon: "🔀" },
+    { value: "5+", label: "Global Standards Supported", icon: "🌐" },
     { value: "0", label: "Manual Calculation Errors", icon: "🎯" },
-    { value: "50+", label: "Successful Implementations", icon: "🏭" },
+    { value: "15%", label: "Material Cost Reduction", icon: "💲" },
   ];
 
   return (

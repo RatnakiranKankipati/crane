@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logo from "../../images/fdeslogo-removebg-preview.png"
+import logo from "../../images/craneeelogo.png"
 import logo1 from "../../images/fdes 1.png"
 
 
@@ -15,7 +15,7 @@ export function Header() {
 
   const navigation = [
     { name: "Home", href: "/" },
-    { name: "Services", href: "/services" },
+    { name: "Our Solution", href: "/services" },
     { name: "Benefits", href: "/benefits" },
     { name: "Process", href: "/process" },
     { name: "About", href: "/about" },
@@ -29,7 +29,7 @@ export function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50">
-      <nav className="container mx-auto px-4 py-2">
+      <nav className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group" >
             {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -41,7 +41,7 @@ export function Header() {
               {/* <span className="text-white font-bold text-2xl">F</span> */}
               {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
               <img style={{width:"13.5%"}} src={logo}/>
-              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{fontSize:"16px"}}>Technologies Private Limited</h5>
+              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{fontSize:"16px"}}>Solutions by FDES</h5>
               {/* <p className="text-xs text-muted-foreground font-medium" style={{color:"#FAA52E"}}>Technologies Private Limited</p> */}
             {/* </div> */}
             {/* <div>
@@ -51,7 +51,7 @@ export function Header() {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          {/* <div className="hidden md:flex items-center space-x-8">
              {navigation.map((item) => (
               <Link
                 key={item.name}
@@ -66,10 +66,33 @@ export function Header() {
             ))}
             <Link href="/contact">
               <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 shadow-lg" data-testid="button-contact">
-                Contact Us
+                Request a Custom Proposal
               </Button>
             </Link>
-          </div>
+          </div> */}
+          <div className="hidden md:flex items-center space-x-8">
+  {navigation.map((item) => (
+    <Link
+      key={item.name}
+      href={item.href}
+      className={`text-foreground hover:text-primary transition-colors whitespace-nowrap ${
+        isActive(item.href) ? "text-primary font-medium" : ""
+      }`}
+      data-testid={`nav-${item.name.toLowerCase()}`}
+    >
+      {item.name}
+    </Link>
+  ))}
+  <Link href="/contact">
+    <Button
+      className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 shadow-lg whitespace-nowrap"
+      data-testid="button-contact"
+    >
+      Request a Custom Proposal
+    </Button>
+  </Link>
+</div>
+
 
           {/* Mobile Navigation */}
           <Sheet open={isOpen} onOpenChange={setIsOpen}>
@@ -96,7 +119,7 @@ export function Header() {
                 ))}
                 <Link href="/contact" onClick={() => setIsOpen(false)}>
                   <Button className="w-full bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 shadow-lg" data-testid="mobile-button-contact">
-                    Contact Us
+                    Request a Custom Proposal
                   </Button>
                 </Link>
               </div>

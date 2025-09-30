@@ -42,34 +42,34 @@ export default function Process() {
                 </div>
               </div>
               
-              <div className="absolute -bottom-4 -left-4 glass-effect p-4 rounded-xl shadow-lg">
+              {/* <div className="absolute -bottom-4 -left-4 glass-effect p-4 rounded-xl shadow-lg">
                 <div className="text-center">
                   <div className="text-2xl font-bold text-primary">3-4</div>
                   <div className="text-xs text-muted-foreground">Months Timeline</div>
                 </div>
-              </div>
+              </div> */}
             </div>
             <div>
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
                   {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">1</div> */}
-                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"50px",height:"35px",borderRadius:"50%"}}>1
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"60px",height:"35px",borderRadius:"50%"}}>1
 
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Requirement Gathering</h4>
-                    <p className="text-muted-foreground">We analyze your calculation reports, drawing standards, and specific company requirements to understand your workflow.</p>
+                    <p className="text-muted-foreground">We partner with your team to analyze your calculation reports, drawing standards, and specific company requirements to understand your workflow.</p>
                   </div>
                 </div>
                 
                 <div className="flex items-start space-x-4">
                   {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">2</div> */}
-                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"45px",height:"35px",borderRadius:"50%"}}>2
+                  <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"60px",height:"35px",borderRadius:"50%"}}>2
 
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Custom Development</h4>
-                    <p className="text-muted-foreground">Our team develops tailored logic and templates that match your exact design standards and calculation methods.</p>
+                    <p className="text-muted-foreground">Our team <strong>collaborates with your experts to </strong> develop tailored logic and templates that match your exact design standards and calculation methods.</p>
                   </div>
                 </div>
                 
@@ -100,10 +100,10 @@ export default function Process() {
           
           {/* Custom Solution Overview */}
           <div className="bg-card rounded-2xl shadow-xl border p-8 mb-16">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-12">Completely Customized Solutions</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-12">A Unified, End-to-End Solution</h2>
             <div className="text-center mb-8">
               <p className="text-lg text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-                Every project is unique, and so is our solution. We build automation software tailored specifically to your company's calculation methods, drawing standards, and workflow requirements.
+                We build a single, seamless automation solution that manages your entire workflow. From initial calculations and 3D modeling in Inventor/Solidworks to the final generation of 2D manufacturing drawings in AutoCAD, our platform is a comprehensive, integrated system tailored to your specific needs.
               </p>
             </div>
             
@@ -151,7 +151,7 @@ export default function Process() {
                 <p className="text-muted-foreground mb-4">Project cost depends on your specific requirements, complexity, and customization needs.</p>
                 <Link href="/contact">
                   <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 px-6 py-3" data-testid="button-quote-process">
-                    Request Detailed Quote
+                    Request a Custom Proposal
                   </Button>
                 </Link>
               </div>
@@ -167,21 +167,21 @@ export default function Process() {
                   <span className="text-2xl font-bold text-primary-foreground">1</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Analysis</h3>
-                <p className="text-muted-foreground">Deep dive into your calculation reports, drawings, and standards</p>
+                <p className="text-muted-foreground">To ensure a perfect fit, we deep dive into your calculation reports, drawings, and standards.</p>
               </div>
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary-foreground">2</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Development</h3>
-                <p className="text-muted-foreground">Build software with tailored logic and templates</p>
+                <p className="text-muted-foreground">To match your unique process, we build the solution with tailored logic and templates.</p>
               </div>
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
                   <span className="text-2xl font-bold text-primary-foreground">3</span>
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Deployment</h3>
-                <p className="text-muted-foreground">Testing, validation, and final deployment</p>
+                <p className="text-muted-foreground">To guarantee reliability, we manage the complete testing, validation, and final deployment.</p>
               </div>
             </div>
           </div>
@@ -190,11 +190,11 @@ export default function Process() {
           <div className="text-center bg-primary p-12 rounded-2xl text-primary-foreground">
             <h2 className="text-3xl font-bold mb-4">Ready to Start Your Project?</h2>
             <p className="text-xl text-primary-foreground/90 mb-8 max-w-2xl mx-auto">
-              Let's discuss your requirements and create a customized automation solution for your business.
+              Ready to discuss your requirements? Let's start the conversation and build a custom automation solution for your business.
             </p>
             <Link href="/contact">
               <Button size="lg" className="bg-accent text-accent-foreground hover:bg-accent/90 px-8 py-4 text-lg" data-testid="button-contact-process">
-                Start Your Project
+                Begin Your Consultation
               </Button>
             </Link>
           </div>

@@ -1,13 +1,13 @@
 import { SEOHead } from "@/components/seo-head";
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Calculator, Box, FileText, Settings, FolderCog, Wrench } from "lucide-react";
+import { Calculator, Box, FileText, Settings, FolderCog, Wrench,Globe,Code ,Repeat,Layers    } from "lucide-react";
 import { TbHexagon3D } from "react-icons/tb";
 import { SiAutocad } from "react-icons/si";
 import service1 from "../images/service1.png"
 import service2 from "../images/service2.png"
 import service3 from "../images/eotcraneresize.jpg"
-import service4 from "../images/image (5).jpg"
+import service4 from "../images/image (7) (5).jpg"
 
 
 export default function Services() {
@@ -75,12 +75,12 @@ export default function Services() {
               <div className="space-y-8">
                 <div className="modern-card p-6 rounded-xl group hover:scale-105 transition-all duration-300">
                   <div className="flex items-start space-x-4">
-                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center shadow-lg">
-                      <Calculator className="w-8 h-8 text-white" />
+                    <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center shadow-lg px-1">
+                      <Globe  className="w-8 h-8 text-white" />
                     </div>
                     <div>
-                      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Automated IS Standard Calculations</h4>
-                      <p className="text-muted-foreground leading-relaxed">Standardized calculations eliminate manual errors and ensure compliance with IS standards for all crane components.</p>
+                      <h4 className="text-xl font-semibold text-foreground mb-2 group-hover:text-primary transition-colors">Flexible Standards Framework</h4>
+                      <p className="text-muted-foreground leading-relaxed">Our platform is engineered to be standard-agnostic. We work with you to implement the logic for any design standard you use—from international codes like IS and Eurocode to your own internal criteria ensuring 100% compliance with your exact requirements.</p>
                     </div>
                   </div>
                 </div>
@@ -112,7 +112,39 @@ export default function Services() {
             </div>
           </div>
 
-          {/* Technical Specifications Grid */}
+
+           {/* New Feature Cards */}
+        
+
+          
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
+            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
+              <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+               <Repeat className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">End-to-End Workflow Automation</h3>
+                <p className="text-muted-foreground leading-relaxed">Our solution manages your entire process within a single, integrated system. We automate everything from initial sales proposals and 3D modeling to the final generation of 2D manufacturing drawings and Bills of Material (BOMs).</p>
+              
+            </div>
+
+            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
+              <div className="bg-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                <Code className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-secondary transition-colors">Full Source Code Ownership</h3>
+                <p className="text-muted-foreground leading-relaxed">Gain a permanent digital asset for your company. We deliver the full source code, giving you complete freedom from vendor lock-in, eliminating all recurring license fees, and providing the ultimate flexibility to maintain or extend the system.</p>
+              
+            </div>
+
+            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
+              <div className="bg-accent w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
+                <Layers className="w-8 h-8 text-white" />
+              </div>
+              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">Seamless CAD Integration</h3>
+                <p className="text-muted-foreground leading-relaxed">The solution fits directly into your existing engineering environment. We provide seamless integration with industry-standard software, including AutoCAD for 2D and Autodesk Inventor/Solidworks for 3D, ensuring quick adoption for your team.</p>
+              
+            </div>
+          </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
             <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
               <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
@@ -156,7 +188,7 @@ export default function Services() {
 
           {/* CAD Software Integration */}
           <div className="bg-slate-50 p-12 rounded-2xl mb-16">
-            <h2 className="text-3xl font-bold text-center text-foreground mb-8">Supported CAD Software</h2>
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">Integrates With the Tools You Already Use.</h2>
             <p className="text-xl text-muted-foreground text-center mb-8 max-w-3xl mx-auto">
               Our software is designed to integrate seamlessly with the following CAD applications
             </p>
@@ -186,7 +218,7 @@ export default function Services() {
                   {/* <div className="flex items-center justify-center" > */}
                   {/* <TbHexagon3D size={50} color="#0c7ae9" /> */}
                   <div className="text-center p-4 bg-secondary/5 rounded-lg">
-                    <div className="text-2xl font-bold text-secondary">SolidWorks , Inventor</div>
+                    <div className="text-2xl font-bold text-secondary">Solidworks, Inventor</div>
                   </div>
                   {/* </div> */}
 
@@ -209,7 +241,7 @@ export default function Services() {
                 <div className="w-16 h-16 bg-primary rounded-xl flex items-center justify-center mb-6 shadow-lg">
                   <Settings className="w-8 h-8 text-white" />
                 </div>
-                <h3 className="text-xl font-bold text-foreground mb-4">Advanced Customization</h3>
+                <h3 className="text-xl font-bold text-foreground mb-4">Custom Feature Development</h3>
                 <p className="text-muted-foreground leading-relaxed">Development of custom design modules or features that are specific to your company's unique requirements (e.g., special crane calculations or machinery arrangements).</p>
               </div>
               <div className="bg-white border border-slate-200 p-8 rounded-2xl hover:shadow-lg transition-all duration-300">
@@ -238,27 +270,27 @@ export default function Services() {
 
             <div className="grid md:grid-cols-3 gap-6 mb-8">
               <div className="p-4 bg-primary/5 rounded-xl border border-primary/20">
-                <h4 className="font-bold text-primary mb-2">Requirements Analysis</h4>
-                <p className="text-sm text-muted-foreground">We review your needs</p>
+                <h4 className="font-bold text-primary mb-2">Expert Consultation</h4>
+                <p className="text-sm text-muted-foreground">Your first step is a strategy call with our automation experts.</p>
               </div>
               <div className="p-4 bg-secondary/5 rounded-xl border border-secondary/20">
-                <h4 className="font-bold text-secondary mb-2">Custom Development Plan</h4>
-                <p className="text-sm text-muted-foreground">Tailored solution design</p>
+                <h4 className="font-bold text-secondary mb-2">Collaborative Scopingn</h4>
+                <p className="text-sm text-muted-foreground">We work with you to understand your unique challenges and goals.</p>
               </div>
               <div className="p-4 bg-accent/5 rounded-xl border border-accent/20">
-                <h4 className="font-bold text-accent mb-2">Detailed Quote</h4>
-                <p className="text-sm text-muted-foreground">Transparent pricing</p>
+                <h4 className="font-bold text-accent mb-2">Clear ROI Roadmap</h4>
+                <p className="text-sm text-muted-foreground">Your proposal will include a clear analysis of projected time savings and ROI.</p>
               </div>
             </div>
 
             <Link href="/contact">
               <Button size="lg" className="bg-primary text-white hover:bg-primary/90 hover:scale-105 transition-all duration-300 px-10 py-5 text-xl font-semibold shadow-2xl" data-testid="button-contact-services">
-                Fill Inquiry Form for Custom Quote
+                Request a Custom Proposal
               </Button>
             </Link>
 
             <p className="text-sm text-muted-foreground mt-4">
-              Response within 24 hours with detailed proposal
+              We'll be in touch within 24 hours to begin crafting your detailed proposal.
             </p>
           </div>
         </div>

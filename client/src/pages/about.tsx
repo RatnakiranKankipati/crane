@@ -17,18 +17,15 @@ export default function About() {
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
-              <h1 className="text-5xl font-bold text-foreground mb-6">About FDES Technologies</h1>
+              <h2 className="text-4xl font-bold text-foreground mb-6">Powered by FDES Technologies</h2>
               <p className="text-xl text-muted-foreground mb-8">
-                At FDES Technologies, we specialize in accelerating the EOT crane design process. Our 
-                automated solutions reduce the design cycle time, ensure compliance with industry 
-                standards, and deliver precise 3D models and 2D drawings, all while minimizing 
-                human errors.
+                FDES Technologies has been a leader in engineering design automation, CAD customization, and product configurators since 2007. We help manufacturing companies across various industries streamline their complex design processes.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
-                Our solutions are designed to integrate seamlessly into your existing workflows and 
-                CAD software, enabling your team to produce detailed 3D models, 2D drawings, GA 
-                drawings, and accurate design calculations with ease. We are committed to 
-                empowering your design process, helping you stay ahead in the competitive industry.
+                After successfully executing multiple custom automation projects for leading EOT crane manufacturers, we recognized a universal challenge in the industry: slow, manual, and error-prone design workflows.
+              </p>
+              <p className="text-lg text-muted-foreground mb-8">
+                This platform is our dedicated answer to that challenge. It combines the deep automation expertise of FDES Technologies with our proven experience in the crane industry, delivering a specialized solution that reduces design cycles, ensures compliance, and delivers error-free outputs.
               </p>
               
               <div className="space-y-6">
@@ -38,7 +35,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2">Engineering Expertise</h4>
-                    <p className="text-muted-foreground">Deep understanding of EOT crane design principles with strict compliance to IS 3177, IS 807, and IS 800 standards.</p>
+                    <p className="text-muted-foreground">Deep understanding of EOT crane design principles. Our platform is built to accommodate any international or internal design standard, ensuring your outputs are always compliant with your specific requirements.</p>
                   </div>
                 </div>
                 
@@ -114,7 +111,7 @@ export default function About() {
                   <Wrench className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Technical Excellence</h3>
-                <p className="text-muted-foreground">Delivering high-quality, reliable software solutions that meet the highest engineering standards.</p>
+                <p className="text-muted-foreground">Delivering high-quality, reliable automation solutions that meet the highest engineering standards.</p>
               </div>
               <div className="text-center">
                 <div className="bg-primary w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4">
@@ -128,7 +125,7 @@ export default function About() {
                   <Users className="w-8 h-8 text-primary-foreground" />
                 </div>
                 <h3 className="text-xl font-bold text-foreground mb-2">Customer Success</h3>
-                <p className="text-muted-foreground">Your success is our priority, with ongoing support and guarantee of future compatibility.</p>
+                <p className="text-muted-foreground">Your success is our priority, with ongoing support and guarantee of future-proof compatibility.</p>
               </div>
             </div>
           </div>
@@ -139,19 +136,19 @@ export default function About() {
             <div className="grid md:grid-cols-4 gap-8 text-center">
               <div>
                 <div className="text-4xl font-bold mb-2">100%</div>
-                <p className="text-primary-foreground/90">Client Satisfaction</p>
+                <p className="text-primary-foreground/90">Customizable Workflows</p>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">85%</div>
-                <p className="text-primary-foreground/90">Design Time Reduction</p>
+                <div className="text-4xl font-bold mb-2">5 + </div>
+                <p className="text-primary-foreground/90">Global Standards Supported</p>
               </div>
               <div>
                 <div className="text-4xl font-bold mb-2">0</div>
-                <p className="text-primary-foreground/90">Calculation Errors</p>
+                <p className="text-primary-foreground/90">Manual Calculation Errors</p>
               </div>
               <div>
-                <div className="text-4xl font-bold mb-2">24hrs</div>
-                <p className="text-primary-foreground/90">Response Time</p>
+                <div className="text-4xl font-bold mb-2">15%</div>
+                <p className="text-primary-foreground/90">Material Cost Reduction</p>
               </div>
             </div>
           </div>

@@ -64,6 +64,34 @@ export default function Contact() {
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
+            <h1 className="text-5xl font-bold text-foreground mb-6">Why Choose FDES Automation?</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+               Experience dramatic improvements in efficiency, accuracy, and scalability
+            </p>
+          </div>
+           <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 p-12 rounded-2xl text-white mb-16">
+            <div className="text-center">
+              <h2 className="text-3xl font-bold mb-6">A Strategic Investment in Your Company's Future</h2>
+              <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
+                Our automation solutions deliver more than just efficiency; they create a direct and lasting impact on your profitability, growth, and operational stability.
+              </p>
+              <div className="grid md:grid-cols-3 gap-8">
+                <div>
+                  <div className="text-4xl font-bold mb-2 text-accent">Custom</div>
+                  <p className="text-gray-300">Calculation Logic</p>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold mb-2 text-accent">Tailored</div>
+                  <p className="text-gray-300">Drawing Standards</p>
+                </div>
+                <div>
+                  <div className="text-4xl font-bold mb-2 text-accent">Complete</div>
+                  <p className="text-gray-300">Software Ownership</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="text-center mb-16">
             <h1 className="text-5xl font-bold text-foreground mb-6">Ready to Transform Your Design Process?</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
               Contact us for a customized solution tailored to your EOT crane manufacturing requirements
@@ -176,11 +204,11 @@ export default function Contact() {
                   disabled={isSubmitting}
                   data-testid="button-submit"
                 >
-                  {isSubmitting ? "Sending..." : "Send Project Inquiry"}
+                  {isSubmitting ? "Sending..." : "Request My Custom Proposal"}
                 </Button>
                 
                 <p className="text-sm text-muted-foreground text-center">
-                  We'll respond within 24 hours with a detailed proposal tailored to your needs.
+                  We'll be in touch within 24 hours to begin crafting your custom proposal.
                 </p>
               </form>
             </div>
@@ -221,6 +249,9 @@ export default function Contact() {
                       <p className="text-muted-foreground">#6-3-852/2/B/A-1, Plot No.6, 1st Floor Kaza Residency, Aparajitha Housing Colony, Ameerpet, India - 500016</p>
                     </div>
                   </div>
+                  <p className="text-sm text-muted-foreground text-start">
+                Your inquiry will be handled by the specialized EOT crane automation team at FDES Technologies.
+                </p>
                 </div>
               </div>
               
@@ -230,21 +261,20 @@ export default function Contact() {
                   Why Choose <span className="text-secondary font-bold">FDES?</span>
                 </h3>
                 <div className="space-y-4">
+                  {/* <strong>
+                    
+                  </strong> */}
                   <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Specialized in EOT crane automation</span>
+                    <CheckCircle className="w-8 h-8 text-primary" />
+                    <span className="text-muted-foreground"><strong>Full Source Code Ownership : </strong>Gain a permanent digital asset with no vendor lock-in or recurring license fees.</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Complete software ownership</span>
+                    <CheckCircle className="w-8 h-8 text-primary" />
+                    <span className="text-muted-foreground"><strong>Direct Expert Partnership : </strong>Work directly with our experienced engineering automation specialists, not a sales team.</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">3-month warranty included</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <CheckCircle className="w-5 h-5 text-primary" />
-                    <span className="text-muted-foreground">Future version compatibility</span>
+                    <CheckCircle className="w-10 h-10 text-primary" />
+                    <span className="text-muted-foreground"><strong>Guaranteed ROI & Warranty : </strong>Your custom proposal will outline a clear return on investment, and our work is backed by a comprehensive warranty.</span>
                   </div>
                 </div>
               </div>
