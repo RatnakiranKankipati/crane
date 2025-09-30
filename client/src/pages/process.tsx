@@ -69,7 +69,7 @@ export default function Process() {
                   </div>
                   <div>
                     <h4 className="text-xl font-bold text-foreground mb-2">Custom Development</h4>
-                    <p className="text-muted-foreground">Our team <strong>collaborates with your experts to </strong> develop tailored logic and templates that match your exact design standards and calculation methods.</p>
+                    <p className="text-muted-foreground">Our team collaborates with your experts to develop tailored logic and templates that match your exact design standards and calculation methods.</p>
                   </div>
                 </div>
                 
@@ -107,43 +107,7 @@ export default function Process() {
               </p>
             </div>
             
-            <div className="grid md:grid-cols-2 gap-12">
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-primary">2D AutoCAD Automation</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Development Duration</span>
-                    <span className="text-primary font-bold">3-4 months</span>
-                  </div>
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Investment</span>
-                    <span className="text-accent font-bold">Custom Quote</span>
-                  </div>
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Platform</span>
-                    <span className="text-primary font-bold">AutoCAD Integration</span>
-                  </div>
-                </div>
-              </div>
-              
-              <div className="space-y-6">
-                <h3 className="text-2xl font-bold text-primary">3D Modeling Automation</h3>
-                <div className="space-y-4">
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Development Duration</span>
-                    <span className="text-primary font-bold">4-5 months</span>
-                  </div>
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Investment</span>
-                    <span className="text-accent font-bold">Custom Quote</span>
-                  </div>
-                  <div className="flex justify-between items-center p-4 bg-muted rounded-lg">
-                    <span className="font-semibold text-foreground">Platform</span>
-                    <span className="text-primary font-bold">Inventor/Solidworks</span>
-                  </div>
-                </div>
-              </div>
-            </div>
+           
             
             <div className="mt-8 p-6 bg-gradient-to-r from-accent/10 to-secondary/10 rounded-xl border border-accent/20">
               <div className="text-center">

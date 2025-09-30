@@ -90,12 +90,16 @@ export function FAQSection() {
   };
 
   return (
-    <section className="py-24 bg-gradient-to-b from-background to-muted/30">
+    <section className="pt-12 pb-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          <div className="inline-flex items-center bg-accent/10 border border-accent/20 px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-accent">❓ FAQ</span>
-          </div>
+          {/* <div className="inline-flex items-center bg-accent/10  bg-primary border border-accent/20 px-4 py-2 rounded-full mb-6">
+            <span className="text-sm font-medium text-white ">❓ FAQ</span>
+          </div> */}
+          <div className="inline-flex items-center bg-gradient-to-r from-orange-400 to-orange-600 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
+  <span className="text-sm font-semibold"> FAQ ❓</span>
+</div>
+
           <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
             Frequently Asked <span className="text-accent font-bold">Questions</span>
           </h2>

@@ -4,7 +4,7 @@ import { AlertCircle, CheckCircle,XCircle,X  } from "lucide-react";
 
 export function Benefits() {
     return (
-        <section className="py-24 bg-slate-50 relative">
+        <section className="pt-12 pb-8 bg-slate-50 relative">
             <div className="container mx-auto px-4">
                 <div className="mb-16">
                     <h2 className="text-4xl font-bold text-center text-foreground mb-12">Traditional vs Automated </h2>

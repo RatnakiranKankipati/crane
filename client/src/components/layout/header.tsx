@@ -3,7 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logo from "../../images/craneeelogo.png"
+import logo from "../../images/newlogo2.png"
 import logo1 from "../../images/fdes 1.png"
 
 
@@ -29,7 +29,7 @@ export function Header() {
 
   return (
     <header className="fixed w-full top-0 z-50 glass-effect border-b border-border/50">
-      <nav className="container mx-auto px-4 py-3">
+      <nav className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group" >
             {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -40,8 +40,9 @@ export function Header() {
               {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"> */}
               {/* <span className="text-white font-bold text-2xl">F</span> */}
               {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
-              <img style={{width:"13.5%"}} src={logo}/>
-              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{fontSize:"16px"}}>Solutions by FDES</h5>
+              <img style={{width:"25%"}} src={logo}/>
+              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{fontSize:"16px"}}>Solutions by FDES Technologies Private Limited
+</h5>
               {/* <p className="text-xs text-muted-foreground font-medium" style={{color:"#FAA52E"}}>Technologies Private Limited</p> */}
             {/* </div> */}
             {/* <div>

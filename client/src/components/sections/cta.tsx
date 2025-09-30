@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
-import { Trophy, UserCog, Puzzle,TrendingUp  } from "lucide-react";
+import { Trophy, UserCog, Puzzle,TrendingUp,Users,Share2  } from "lucide-react";
 export function CTASection() {
   return (
     <section className="py-24 bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 relative overflow-hidden">
@@ -49,7 +49,7 @@ export function CTASection() {
             </div>
             <div className="bg-white/10 backdrop-blur-sm p-6 rounded-2xl border border-white/20">
             <div style={{ display: "flex", justifyContent: "center", alignItems: "center",gap:"10px" }}>
-                <Puzzle className="w-6 h-6 text-accent mb-3" />
+                <Share2  className="w-6 h-6 text-accent mb-3" />
                 <h4 className="text-xl font-bold mb-3" data-testid="cta-feature-2"> Collaborative Scoping</h4>
                 </div>
               

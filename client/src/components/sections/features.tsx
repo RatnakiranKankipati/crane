@@ -42,13 +42,13 @@ export function FeaturesSection() {
   ];
 
   return (
-    <section className="py-24 bg-slate-50 relative">
+    <section className="pt-24 pb-12 bg-slate-50 relative">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
           <div className="inline-flex items-center bg-primary text-white px-4 py-2 rounded-full mb-6">
             <span className="text-sm font-medium">⚡ Advanced Automation</span>
           </div>
-          <h2 className="text-5xl lg:text-6xl font-bold text-slate-800 mb-6">
+          <h2 className="text-4xl lg:text-6xl font-bold text-slate-800 mb-6">
             Complete <span className="text-primary font-bold">Automation Features</span>
           </h2>
           <p className="text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed">

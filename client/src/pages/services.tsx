@@ -22,12 +22,11 @@ export default function Services() {
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
-            <div className="inline-flex items-center bg-primary/10 border border-primary/20 px-4 py-2 rounded-full mb-6">
-              <span className="text-sm font-medium text-primary">🛠️ Our Solutions</span>
-            </div>
-            <h1 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Our <span className="text-secondary font-bold">Automation Solutions</span>
-            </h1>
+            
+            {/* <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
+              Our Automation Solutions
+            </h2> */}
+            <h1 className="text-5xl font-bold text-foreground mb-6">Our Automation Solutions</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Custom-built software tailored to your design standards with comprehensive automation capabilities
             </p>
@@ -145,46 +144,7 @@ export default function Services() {
               
             </div>
           </div>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8 mb-16">
-            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="bg-primary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
-                <FolderCog className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-primary transition-colors">2D Automation</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>AutoCAD integration</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Tailored development timeline</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Custom pricing based on requirements</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-primary rounded-full"></span><span>Complete drawing automation</span></li>
-              </ul>
-            </div>
-
-            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="bg-secondary w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
-                <Box className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-secondary transition-colors">3D Automation</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Inventor/Solidworks integration</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Customized development schedule</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Custom pricing based on requirements</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-secondary rounded-full"></span><span>Complete 3D modeling automation</span></li>
-              </ul>
-            </div>
-
-            <div className="modern-card p-8 rounded-2xl group hover:scale-105 transition-all duration-300">
-              <div className="bg-accent w-16 h-16 rounded-xl flex items-center justify-center mb-6 shadow-lg">
-                <Settings className="w-8 h-8 text-white" />
-              </div>
-              <h3 className="text-2xl font-bold text-foreground mb-4 group-hover:text-accent transition-colors">Full Ownership</h3>
-              <ul className="space-y-3 text-muted-foreground">
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-accent rounded-full"></span><span>Complete software ownership</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-accent rounded-full"></span><span>No installation restrictions</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-accent rounded-full"></span><span>3-month warranty included</span></li>
-                <li className="flex items-center space-x-2"><span className="w-1.5 h-1.5 bg-accent rounded-full"></span><span>Multi-workstation deployment</span></li>
-              </ul>
-            </div>
-          </div>
+          
 
           {/* CAD Software Integration */}
           <div className="bg-slate-50 p-12 rounded-2xl mb-16">
@@ -274,7 +234,7 @@ export default function Services() {
                 <p className="text-sm text-muted-foreground">Your first step is a strategy call with our automation experts.</p>
               </div>
               <div className="p-4 bg-secondary/5 rounded-xl border border-secondary/20">
-                <h4 className="font-bold text-secondary mb-2">Collaborative Scopingn</h4>
+                <h4 className="font-bold text-secondary mb-2">Collaborative Scoping</h4>
                 <p className="text-sm text-muted-foreground">We work with you to understand your unique challenges and goals.</p>
               </div>
               <div className="p-4 bg-accent/5 rounded-xl border border-accent/20">
