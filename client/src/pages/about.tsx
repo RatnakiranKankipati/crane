@@ -18,7 +18,7 @@ export default function About() {
           <div className="grid lg:grid-cols-2 gap-12 items-center mb-16">
             <div>
               <h2 className="text-4xl font-bold text-foreground mb-6">Powered by FDES Technologies</h2>
-              <p className="text-xl text-muted-foreground mb-8">
+              <p className="text-lg text-muted-foreground mb-8">
                 FDES Technologies has been a leader in engineering design automation, CAD customization, and product configurators since 2007. We help manufacturing companies across various industries streamline their complex design processes.
               </p>
               <p className="text-lg text-muted-foreground mb-8">
@@ -35,7 +35,7 @@ export default function About() {
                   </div>
                   <div>
                     <h4 className="text-xl font-semibold text-foreground mb-2">Engineering Expertise</h4>
-                    <p className="text-muted-foreground">Deep understanding of EOT crane design principles. Our platform is built to accommodate any international or internal design standard, ensuring your outputs are always compliant with your specific requirements.</p>
+                    <p className="text-muted-foreground">Our platform is built to accommodate any international or internal design standard, ensuring your outputs are always compliant with your specific requirements.</p>
                   </div>
                 </div>
                 

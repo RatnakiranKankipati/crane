@@ -1,16 +1,16 @@
 import { Calculator, Box, FileText, Settings, Shield, Users } from "lucide-react";
-import calculations from "../../images/cal13.png"
+import FlexibleStandards from "../../images/FlexibleStandards.png"
 import autocad from "../../images/autocad.png"
-import drawing from "../../images/Screenshot 2025-09-12 104822 drawing.png"
-import customization from "../../images/custom.jpeg"
-import completeownership from "../../images/sourcecode.png"
-import user from "../../images/Userfriendly Interface.png"
+import drawing from "../../images/drawing.png"
+import customization from "../../images/customization.jpeg"
+import sourcecode from "../../images/sourcecode.png"
+import userinterface from "../../images/userinterface.png"
 
 
 export function FeaturesSection() {
   const features = [
     {
-      image: calculations,
+      image: FlexibleStandards,
       title: "Flexible Standards Framework",
       description: "Our platform is engineered to be standard-agnostic. We work with you to implement the specific rules and logic for any design standard you use, from international codes like IS and Eurocode to your own internal, proprietary criteria. This ensures every output is 100% compliant with your exact engineering requirements."
     },
@@ -30,12 +30,12 @@ export function FeaturesSection() {
       description: "We understand that every crane design process is unique. Our solution is highly customizable to match your specific design standards and operational requirements. We work closely with your team to gather the necessary inputs, ensuring seamless integration into your existing workflows."
     },
     {
-      image: completeownership,
+      image: sourcecode,
       title: "Full Source Code Ownership",
       description: "Upon project completion, we deliver the full source code. This transforms the solution into a permanent, valuable digital asset for your company. It gives you complete freedom from vendor lock-in, eliminates all recurring license fees, and provides the ultimate flexibility to maintain or extend the system with your own team."
     },
     {
-      image: user,
+      image: userinterface,
       title: "User-Friendly Interface",
       description: "Intuitive interface design ensures quick adoption by your engineering teams with minimal training required."
     }

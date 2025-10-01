@@ -3,19 +3,23 @@ import { Link } from "wouter";
 import { Button } from "@/components/ui/button";
 import { DollarSign, CheckCircle, TrendingUp, AlertCircle } from "lucide-react";
 import timeandcosting from '../images/timecost.png'
-import errorreduction from '../images/error.png'
+import scaeblity from '../images/scaeblity.png'
 import scalebility from '../images/de-risk.png'
+import ceoimg from '../images/CEO.png'
+import headimg from '../images/head.png'
+import designengineer from '../images/designengineer.png'
+
 
 
 export default function Benefits() {
   return (
     <>
-      <SEOHead 
+      <SEOHead
         title="Benefits of EOT Crane Automation | Time & Cost Savings | FDES Technologies"
         description="Discover the benefits of EOT crane design automation: 90% time reduction, zero calculation errors, enhanced productivity, and significant cost savings."
         keywords="EOT crane automation benefits, design time reduction, cost savings automation, engineering efficiency, crane manufacturing benefits"
       />
-      
+
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
@@ -24,16 +28,16 @@ export default function Benefits() {
               Our automation solutions deliver more than just efficiency; they create a direct and lasting impact on your profitability, growth, and operational stability.
             </p>
           </div>
-          
-          
-          
+
+
+
           {/* Benefits Grid */}
           <div className="grid md:grid-cols-3 gap-8 mb-16">
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
-                <img 
-                  src={timeandcosting} 
-                  alt="Financial calculations and cost savings" 
+                <img
+                  src={timeandcosting}
+                  alt="Financial calculations and cost savings"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-accent/80 to-transparent"></div>
@@ -51,12 +55,12 @@ export default function Benefits() {
                 </div>
               </div>
             </div>
-            
+
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
-                <img 
-                  src={errorreduction} 
-                  alt="Quality control and engineering precision" 
+                <img
+                  src={scalebility}
+                  alt="Quality control and engineering precision"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-primary/80 to-transparent"></div>
@@ -74,12 +78,12 @@ export default function Benefits() {
                 </div>
               </div>
             </div>
-            
+
             <div className="modern-card p-0 rounded-2xl overflow-hidden group">
               <div className="h-48 relative overflow-hidden">
-                <img 
-                  src={scalebility} 
-                  alt="Scalable manufacturing operations" 
+                <img
+                  src={scaeblity}
+                  alt="Scalable manufacturing operations"
                   className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-secondary/80 to-transparent"></div>
@@ -99,29 +103,170 @@ export default function Benefits() {
             </div>
           </div>
 
-          {/* Custom Solution Benefits */}
-          <div className="bg-gradient-to-br from-slate-900 via-blue-900 to-slate-800 p-12 rounded-2xl text-white mb-16">
-            <div className="text-center">
-              <h2 className="text-3xl font-bold mb-6">A Strategic Investment in Your Company's Future</h2>
-              <p className="text-xl text-gray-200 mb-8 max-w-3xl mx-auto">
-                Our automation solutions deliver more than just efficiency; they create a direct and lasting impact on your profitability, growth, and operational stability.
-              </p>
-              <div className="grid md:grid-cols-3 gap-8">
-                <div>
-                  <div className="text-4xl font-bold mb-2 text-accent">Custom</div>
-                  <p className="text-gray-300">Calculation Logic</p>
+
+          <div className="bg-white-50 py-12 rounded-2xl">
+            <h2 className="text-3xl font-bold text-center text-foreground mb-8">A Solution for Your Entire Team</h2>
+{/* 
+            <div className="grid md:grid-cols-3 gap-8 mb-16">
+              <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={timeandcosting}
+                    alt="Financial calculations and cost savings"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+
                 </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2 text-accent">Tailored</div>
-                  <p className="text-gray-300">Drawing Standards</p>
-                </div>
-                <div>
-                  <div className="text-4xl font-bold mb-2 text-accent">Complete</div>
-                  <p className="text-gray-300">Software Ownership</p>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">CEO / Business Owner</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">Increase overall profitability, accelerate your entry into new global markets, and build a scalable foundation for long-term business growth.</p>
+
                 </div>
               </div>
-            </div>
+
+              <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={errorreduction}
+                    alt="Quality control and engineering precision"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">Head of Engineering / CTO</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">Guarantee design quality and consistency across your entire team, reduce costly rework, and gain a permanent, fully-owned digital asset with no vendor lock-in.</p>
+
+                </div>
+              </div>
+
+              <div className="modern-card p-0 rounded-2xl overflow-hidden group">
+                <div className="h-48 relative overflow-hidden">
+                  <img
+                    src={scalebility}
+                    alt="Scalable manufacturing operations"
+                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                  />
+                </div>
+                <div className="p-8">
+                  <h3 className="text-2xl font-bold text-foreground mb-4">Design Engineer</h3>
+                  <p className="text-muted-foreground mb-4 leading-relaxed">Eliminate tedious, repetitive tasks. Spend less time on manual calculations and drafting, and more time focused on innovation and solving complex engineering challenges.</p>
+
+                </div>
+              </div>
+            </div> */}
+
+            {/* <div className="grid md:grid-cols-3 gap-8 mb-16">
+
+  <div className="modern-card p-8 rounded-2xl bg-background shadow-lg text-center">
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-1 border-primary/20">
+      <img
+        src={ceoimg}
+        alt="Financial calculations and cost savings"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-bold text-foreground mb-2">
+      CEO / Business Owner
+    </h3>
+    <p className="text-muted-foreground leading-relaxed">
+      Increase overall profitability, accelerate your entry into new global markets, and build a scalable foundation for long-term business growth.
+    </p>
+  </div>
+
+
+  <div className="modern-card p-8 rounded-2xl bg-background shadow-lg text-center">
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-1 border-primary/20">
+      <img
+        src={headimg}
+        alt="Quality control and engineering precision"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-bold text-foreground mb-2">
+      Head of Engineering / CTO
+    </h3>
+    <p className="text-muted-foreground leading-relaxed">
+      Guarantee design quality and consistency across your entire team, reduce costly rework, and gain a permanent, fully-owned digital asset with no vendor lock-in.
+    </p>
+  </div>
+
+  <div className="modern-card p-8 rounded-2xl bg-background shadow-lg text-center">
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden border-1 border-primary/20">
+      <img
+        src={designengineer}
+        alt="Scalable manufacturing operations"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-bold text-foreground mb-2">
+      Design Engineer
+    </h3>
+    <p className="text-muted-foreground leading-relaxed">
+      Eliminate tedious, repetitive tasks. Spend less time on manual calculations and drafting, and more time focused on innovation and solving complex engineering challenges.
+    </p>
+  </div>
+</div> */}
+
+<div className="grid md:grid-cols-3 gap-12 mb-16 text-center">
+  {/* CEO */}
+  <div>
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
+      <img
+        src={ceoimg}
+        alt="CEO / Business Owner"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-semibold text-foreground">
+      CEO / Business Owner
+    </h3>
+    <p className="mt-3 text-muted-foreground leading-relaxed">
+      Increase overall profitability, accelerate your entry into new global markets, and build a scalable foundation for long-term business growth.
+    </p>
+  </div>
+
+  {/* Head of Engineering */}
+  <div>
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
+      <img
+        src={headimg}
+        alt="Head of Engineering / CTO"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-semibold text-foreground">
+      Head of Engineering / CTO
+    </h3>
+    <p className="mt-3 text-muted-foreground leading-relaxed">
+      Guarantee design quality and consistency across your entire team, reduce costly rework, and gain a permanent, fully-owned digital asset with no vendor lock-in.
+    </p>
+  </div>
+
+  {/* Design Engineer */}
+  <div>
+    <div className="w-40 h-40 mx-auto mb-6 rounded-full overflow-hidden">
+      <img
+        src={designengineer}
+        alt="Design Engineer"
+        className="w-full h-full object-cover"
+      />
+    </div>
+    <h3 className="text-xl font-semibold text-foreground">
+      Design Engineer
+    </h3>
+    
+    <p className="mt-3 text-muted-foreground leading-relaxed">
+      Eliminate tedious, repetitive tasks. Spend less time on manual calculations and drafting, and more time focused on innovation and solving complex engineering challenges.
+    </p>
+  </div>
+</div>
+
+
           </div>
+
+
+
 
           {/* CTA Section */}
           <div className="text-center bg-muted p-12 rounded-2xl">

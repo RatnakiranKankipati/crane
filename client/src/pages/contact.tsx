@@ -64,7 +64,7 @@ export default function Contact() {
       <div className="py-20">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-foreground mb-6">Why Choose FDES Automation?</h1>
+            <h1 className="text-5xl font-bold text-foreground mb-6">Why Choose Crane Genie?</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
                Experience dramatic improvements in efficiency, accuracy, and scalability
             </p>
@@ -91,12 +91,7 @@ export default function Contact() {
               </div>
             </div>
           </div>
-          <div className="text-center mb-16">
-            <h1 className="text-5xl font-bold text-foreground mb-6">Ready to Transform Your Design Process?</h1>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Contact us for a customized solution tailored to your EOT crane manufacturing requirements
-            </p>
-          </div>
+          
           
           <div className="grid lg:grid-cols-2 gap-12 items-start">
             {/* Contact Form */}

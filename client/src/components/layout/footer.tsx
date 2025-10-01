@@ -1,5 +1,6 @@
 import { Link } from "wouter";
 import { Mail, Globe,Linkedin  } from "lucide-react";
+import logo from "../../images/cranelogo.png"
 
 export function Footer() {
   return (
@@ -15,17 +16,20 @@ export function Footer() {
                 <h3 className="text-xl font-bold">FDES Technologies</h3>
                 <p className="text-sm text-secondary-foreground/70">Private Limited</p>
               </div> */}
-              <img  style={{width:"20%"}} src={"https://fdestech.com/wp-content/uploads/2018/06/footerlogo_white.png"}/>
+              <img  style={{width:"27%"}} src={logo}/>
               <div>
-                <h6 className="text-xl font-bold" style={{fontSize:"16px"}}>Technologies Private Limited</h6>
+                <h6 className="text-white transition-colors whitespace-nowrap " style={{fontSize:"16px"}}>solution by FDES Technologies</h6>
                 {/* <h5 className="text-xl font-bold">Private Limited</h5> */}
 
                 {/* <p className="text-sm text-secondary-foreground/70">Private Limited</p> */}
               </div> 
             </div>
-            <p className="text-secondary-foreground/80 mb-4 max-w-md">
+            {/* <p className="text-secondary-foreground/80 mb-4 max-w-md">
               Specialized in engineering design automation for EOT crane manufacturers. 
               Transforming traditional design workflows with intelligent automation solutions.
+            </p> */}
+            <p className="text-secondary-foreground/80 mb-4 max-w-md">
+              Crane Genie is a specialized engineering design automation solution for the EOT crane industry, proudly developed and supported by the experts at FDES Technologies.
             </p>
             <div className="flex space-x-4">
               <a 
@@ -57,12 +61,11 @@ export function Footer() {
           </div>
 
           <div>
-            <h4 className="text-lg font-bold mb-4">Services</h4>
+            <h4 className="text-lg font-bold mb-4">Crane Genie</h4>
             <ul className="space-y-2 text-secondary-foreground/80">
-              <li><Link href="/services" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-2d">2D Automation</Link></li>
-              <li><Link href="/services" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-3d">3D Automation</Link></li>
-              <li><Link href="/services" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-custom">Custom Development</Link></li>
-              <li><Link href="/services" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-cad">CAD Integration</Link></li>
+              <li><Link href="/services" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-2d">Our Solution</Link></li>
+              <li><Link href="/benefits" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-3d">Benefits</Link></li>
+              <li><Link href="/process" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-custom">Our Process</Link></li>
             </ul>
           </div>
 
@@ -70,8 +73,8 @@ export function Footer() {
             <h4 className="text-lg font-bold mb-4">Company</h4>
             <ul className="space-y-2 text-secondary-foreground/80">
               <li><Link href="/about" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-about">About Us</Link></li>
-              <li><Link href="/process" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-process">Our Process</Link></li>
-              <li><Link href="/benefits" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-benefits">Benefits</Link></li>
+              <li><Link href="https://fdestech.com" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-process">https://fdestech.com</Link></li>
+              {/* <li><Link href="/benefits" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-benefits">Benefits</Link></li> */}
               <li><Link href="/contact" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-contact">Contact</Link></li>
             </ul>
           </div>

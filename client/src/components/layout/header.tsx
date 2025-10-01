@@ -3,8 +3,7 @@ import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
 import { Menu } from "lucide-react";
-import logo from "../../images/newlogo2.png"
-import logo1 from "../../images/fdes 1.png"
+import logo from "../../images/cranelogo.png"
 
 
 
@@ -41,7 +40,7 @@ export function Header() {
               {/* <span className="text-white font-bold text-2xl">F</span> */}
               {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
               <img style={{width:"25%"}} src={logo}/>
-              <h5 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors" style={{fontSize:"16px"}}>Solutions by FDES Technologies Private Limited
+              <h5 className="text-foreground hover:text-primary transition-colors whitespace-nowrap "> a solution by FDES Technologies
 </h5>
               {/* <p className="text-xs text-muted-foreground font-medium" style={{color:"#FAA52E"}}>Technologies Private Limited</p> */}
             {/* </div> */}

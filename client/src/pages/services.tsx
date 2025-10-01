@@ -7,7 +7,7 @@ import { SiAutocad } from "react-icons/si";
 import service1 from "../images/service1.png"
 import service2 from "../images/service2.png"
 import service3 from "../images/eotcraneresize.jpg"
-import service4 from "../images/image (7) (5).jpg"
+import service4 from "../images/griders.jpg"
 
 
 export default function Services() {

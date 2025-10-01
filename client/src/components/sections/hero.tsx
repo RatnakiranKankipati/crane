@@ -3,7 +3,8 @@ import { Button } from "@/components/ui/button";
 import { Zap } from "lucide-react";
 import Heroimg from "../../images/eotcrane.png"
 import eot from "../../images/eot3.png"
-import Heroimg2 from "../../images/updated image.png"
+// import Heroimg2 from "../../images/herosection.png"
+import Heroimg2 from "@assets/herosection.png";
 
 
 export function HeroSection() {
@@ -22,6 +23,7 @@ export function HeroSection() {
               </h1>
               <p className="text-xl lg:text-2xl text-gray-200 leading-relaxed">
                 Cut design time by 85% with our intelligent automation solutions. From IS standard calculations to complete drawing generation.
+                From complex engineering calculations to complete, manufacturing ready drawing generation.
 
               </p>
             </div>
@@ -50,16 +52,17 @@ export function HeroSection() {
 
             <div className="flex items-center space-x-8 pt-4">
               <div className="text-center">
+                
                 <div className="text-3xl font-bold text-accent">100%</div>
-                <div className="text-sm text-gray-300">Automate Checks</div>
+                <div className="text-sm text-gray-300">Customizable Workflows</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">10x</div>
-                <div className="text-sm text-gray-300">Design Throughput</div>
+                <div className="text-3xl font-bold text-accent">5+</div>
+                <div className="text-sm text-gray-300">Global Standards Supported</div>
               </div>
               <div className="text-center">
-                <div className="text-3xl font-bold text-accent">100%</div>
-                <div className="text-sm text-gray-300">IS Compliance</div>
+                <div className="text-3xl font-bold text-accent">15%</div>
+                <div className="text-sm text-gray-300">Material Cost Reduction</div>
               </div>
             </div>
           </div>
