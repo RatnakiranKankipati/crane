@@ -42,17 +42,11 @@ export default function Process() {
                 </div>
               </div>
               
-              {/* <div className="absolute -bottom-4 -left-4 glass-effect p-4 rounded-xl shadow-lg">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-primary">3-4</div>
-                  <div className="text-xs text-muted-foreground">Months Timeline</div>
-                </div>
-              </div> */}
+              
             </div>
             <div>
               <div className="space-y-8">
                 <div className="flex items-start space-x-4">
-                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">1</div> */}
                   <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"60px",height:"35px",borderRadius:"50%"}}>1
 
                   </div>
@@ -63,7 +57,6 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">2</div> */}
                   <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"60px",height:"35px",borderRadius:"50%"}}>2
 
                   </div>
@@ -74,7 +67,6 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">3</div> */}
                   <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"45px",height:"35px",borderRadius:"50%"}}>3
 
                   </div>
@@ -85,7 +77,6 @@ export default function Process() {
                 </div>
                 
                 <div className="flex items-start space-x-4">
-                  {/* <div className="bg-primary text-primary-foreground w-10 h-10 rounded-full flex items-center justify-center font-bold">4</div> */}
                   <div className="bg-primary flex items-center justify-center font-bold text-primary-foreground" style={{width:"70px",height:"35px",borderRadius:"50%"}}>4
 
                   </div>

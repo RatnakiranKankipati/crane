@@ -31,45 +31,13 @@ export function Header() {
       <nav className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group" >
-            {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
-              <span className="text-white font-bold text-2xl">F</span>
-              <img style={{width:"120px",height:"90px"}} src={logo} />
-              <img className="feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform" style={{width:"70px",height:"70px"}} src={logo}/>
-            </div> */}
-              {/* <div className="w-15 h-12 feature-icon-gradient rounded-xl flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform"> */}
-              {/* <span className="text-white font-bold text-2xl">F</span> */}
-              {/* <img style={{width:"120px",height:"90px"}} src={logo} /> */}
               <img style={{width:"25%"}} src={logo}/>
               <h5 className="text-foreground hover:text-primary transition-colors whitespace-nowrap "> a solution by FDES Technologies
 </h5>
-              {/* <p className="text-xs text-muted-foreground font-medium" style={{color:"#FAA52E"}}>Technologies Private Limited</p> */}
-            {/* </div> */}
-            {/* <div>
-              <h1 className="text-xl font-bold text-foreground group-hover:text-primary transition-colors">EOT Crane Design Automation</h1>
-              <p className="text-xs text-muted-foreground font-medium">EOT Crane Design Automation</p>
-            </div> */}
+              
           </Link>
 
-          {/* Desktop Navigation */}
-          {/* <div className="hidden md:flex items-center space-x-8">
-             {navigation.map((item) => (
-              <Link
-                key={item.name}
-                href={item.href}
-                className={`text-foreground hover:text-primary transition-colors ${
-                  isActive(item.href) ? "text-primary font-medium" : ""
-                }`}
-                data-testid={`nav-${item.name.toLowerCase()}`}
-              >
-                {item.name}
-              </Link>
-            ))}
-            <Link href="/contact">
-              <Button className="bg-gradient-to-r from-primary to-secondary text-white hover:from-primary/90 hover:to-secondary/90 hover:scale-105 transition-all duration-300 shadow-lg" data-testid="button-contact">
-                Request a Custom Proposal
-              </Button>
-            </Link>
-          </div> */}
+        
           <div className="hidden md:flex items-center space-x-8">
   {navigation.map((item) => (
     <Link

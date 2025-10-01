@@ -93,9 +93,7 @@ export function FAQSection() {
     <section className="pt-12 pb-24 bg-gradient-to-b from-background to-muted/30">
       <div className="container mx-auto px-4">
         <div className="text-center mb-20">
-          {/* <div className="inline-flex items-center bg-accent/10  bg-primary border border-accent/20 px-4 py-2 rounded-full mb-6">
-            <span className="text-sm font-medium text-white ">❓ FAQ</span>
-          </div> */}
+          
           <div className="inline-flex items-center bg-gradient-to-r from-orange-400 to-orange-600 text-white px-5 py-2 rounded-full shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer">
   <span className="text-sm font-semibold"> FAQ ❓</span>
 </div>
@@ -220,14 +218,7 @@ export function FAQSection() {
                   }`}
               />
             </button>
-            {/* {openIndex === 3 && (
-              <div
-                className="mt-6 text-muted-foreground leading-relaxed border-t border-border/50 pt-6"
-                data-testid="faq-answer-3"
-              >
-                The software automates design calculations based on input parameters and the relevant Indian standards. This ensures that all calculations are precise and aligned with industry requirements, significantly reducing the risk of manual errors.
-              </div>
-            )} */}
+            
             {openIndex === 3 && (
               <div
                 className="mt-6 text-muted-foreground leading-relaxed border-t border-border/50 pt-6"
@@ -310,15 +301,7 @@ export function FAQSection() {
                   }`}
               />
             </button>
-            {/* {openIndex === 2 && (
-              <div
-                className="mt-6 text-muted-foreground leading-relaxed border-t border-border/50 pt-6"
-                data-testid="faq-answer-2"
-              >
-                The solution is designed to generate a complete manufacturing-ready package from a single set of inputs. The typical outputs include:
-              </div>
-              
-            )} */}
+           
             {openIndex === 6 && (
               <div
                 className="mt-6 text-muted-foreground leading-relaxed border-t border-border/50 pt-6"

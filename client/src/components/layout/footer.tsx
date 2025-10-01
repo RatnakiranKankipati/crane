@@ -9,25 +9,14 @@ export function Footer() {
         <div className="grid md:grid-cols-5 gap-8">
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
-              {/* <div className="w-10 h-10 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-primary-foreground font-bold text-xl">F</span>
-              </div>
-              <div>
-                <h3 className="text-xl font-bold">FDES Technologies</h3>
-                <p className="text-sm text-secondary-foreground/70">Private Limited</p>
-              </div> */}
+            
               <img  style={{width:"27%"}} src={logo}/>
               <div>
                 <h6 className="text-white transition-colors whitespace-nowrap " style={{fontSize:"16px"}}>solution by FDES Technologies</h6>
-                {/* <h5 className="text-xl font-bold">Private Limited</h5> */}
-
-                {/* <p className="text-sm text-secondary-foreground/70">Private Limited</p> */}
+                
               </div> 
             </div>
-            {/* <p className="text-secondary-foreground/80 mb-4 max-w-md">
-              Specialized in engineering design automation for EOT crane manufacturers. 
-              Transforming traditional design workflows with intelligent automation solutions.
-            </p> */}
+            
             <p className="text-secondary-foreground/80 mb-4 max-w-md">
               Crane Genie is a specialized engineering design automation solution for the EOT crane industry, proudly developed and supported by the experts at FDES Technologies.
             </p>
@@ -74,7 +63,6 @@ export function Footer() {
             <ul className="space-y-2 text-secondary-foreground/80">
               <li><Link href="/about" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-about">About Us</Link></li>
               <li><Link href="https://fdestech.com" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-process">https://fdestech.com</Link></li>
-              {/* <li><Link href="/benefits" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-benefits">Benefits</Link></li> */}
               <li><Link href="/contact" className="hover:text-secondary-foreground transition-colors" data-testid="footer-link-contact">Contact</Link></li>
             </ul>
           </div>

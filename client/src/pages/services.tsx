@@ -23,9 +23,7 @@ export default function Services() {
         <div className="container mx-auto px-4">
           <div className="text-center mb-20">
             
-            {/* <h2 className="text-5xl lg:text-6xl font-bold text-foreground mb-6">
-              Our Automation Solutions
-            </h2> */}
+            
             <h1 className="text-5xl font-bold text-foreground mb-6">Our Automation Solutions</h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
               Custom-built software tailored to your design standards with comprehensive automation capabilities
@@ -165,11 +163,9 @@ export default function Services() {
                   <h3 className="text-2xl font-bold text-primary mb-0 text-center">2D Application</h3>
                 </div>
                 <div className="text-center">
-                  {/* <div className="text-4xl font-secondary text-bold mb-2">AutoCAD</div> */}
                   <div className="text-center p-4 bg-secondary/5 rounded-lg">
                     <div className="text-2xl font-bold text-secondary">AutoCAD</div>
                   </div>
-                  {/* <p className="text-muted-foreground">Complete 2D drawing automation</p> */}
                   <p className="text-muted-foreground">Complete 2D drawing automation.
                     Boost productivity with smart drafting tools.
                     Seamless integration for faster project delivery. </p>
@@ -181,16 +177,11 @@ export default function Services() {
                   <h3 className="text-2xl font-bold text-primary mb-0 text-center">3D Applications</h3>
                 </div>
                 <div className="text-center" >
-                  {/* <div className="flex items-center justify-center" > */}
-                  {/* <TbHexagon3D size={50} color="#0c7ae9" /> */}
+                  
                   <div className="text-center p-4 bg-secondary/5 rounded-lg">
                     <div className="text-2xl font-bold text-secondary">Solidworks, Inventor</div>
                   </div>
-                  {/* </div> */}
-
-                  {/* <div className="text-center p-4 bg-secondary/5 rounded-lg">
-                    <div className="text-2xl font-bold text-secondary">Autodesk Inventor</div>
-                  </div> */}
+                 
                   <p className="text-muted-foreground">Advanced 3D design and modeling.
                     Streamline product development with precision tools.
                     Enhance collaboration from concept to production. </p>
