@@ -64,6 +64,7 @@ export default function About() {
             <div className="relative">
               <div className="relative overflow-hidden rounded-2xl">
                 <img 
+                rel="preload"
                   src={about} 
                   alt="Modern engineering office with CAD workstations" 
                   className="w-full h-auto transform hover:scale-105 transition-transform duration-500"
