@@ -76,7 +76,7 @@ export function HeroSection() {
 
                 <img
 
-                  src={"images/herosection.png"}
+                  src={"https://images.unsplash.com/photo-1581092162384-8987c1d64718?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&h=800"}
                   loading="lazy"
                   alt="EOT crane in modern manufacturing facility"
                   className="rounded-2xl shadow-2xl w-full h-auto border-white/20"
