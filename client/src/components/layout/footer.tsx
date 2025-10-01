@@ -10,9 +10,9 @@ export function Footer() {
           <div className="md:col-span-2">
             <div className="flex items-center space-x-2 mb-4">
             
-              <img  style={{width:"27%"}} src={logo}/>
+              <img  style={{width:"28%"}} src={logo}/>
               <div>
-                <h6 className="text-white transition-colors whitespace-nowrap " style={{fontSize:"16px"}}>solution by FDES Technologies</h6>
+                <h6 className="text-white transition-colors whitespace-nowrap " style={{fontSize:"16px"}}> a solution by FDES Technologies</h6>
                 
               </div> 
             </div>

@@ -31,7 +31,7 @@ export function Header() {
       <nav className="container mx-auto px-4 py-5">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-3 group" >
-              <img style={{width:"25%"}} src={logo}/>
+              <img style={{width:"26%"}} src={logo}/>
               <h5 className="text-foreground hover:text-primary transition-colors whitespace-nowrap "> a solution by FDES Technologies
 </h5>
               
