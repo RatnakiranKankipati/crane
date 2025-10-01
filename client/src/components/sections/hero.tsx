@@ -77,7 +77,7 @@ export function HeroSection() {
                 <img
 
                   src={Heroimg2}
-
+                  loading="lazy"
                   alt="EOT crane in modern manufacturing facility"
                   className="rounded-2xl shadow-2xl w-full h-auto border-white/20"
                   data-testid="img-hero"
