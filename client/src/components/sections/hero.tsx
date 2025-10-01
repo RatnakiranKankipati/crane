@@ -4,7 +4,7 @@ import { Zap } from "lucide-react";
 import Heroimg from "../../images/eotcrane.png"
 import eot from "../../images/eot3.png"
 // import Heroimg2 from "../../images/herosection.png"
-import Heroimg2 from "@assets/herosection.png";
+// import Heroimg2 from "@assets/herosection.png";
 
 
 export function HeroSection() {
@@ -76,7 +76,7 @@ export function HeroSection() {
 
                 <img
 
-                  src={Heroimg2}
+                  src={"herosection.png"}
                   loading="lazy"
                   alt="EOT crane in modern manufacturing facility"
                   className="rounded-2xl shadow-2xl w-full h-auto border-white/20"
